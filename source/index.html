@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header centered">
+      <h1 class="visually-hidden">Приветствуем вас на главной странице приложения Pink</h1>
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логтип Pink" width="100" height="50">
+        <img class="page-header__burger-menu" src="http://placehold.it/150x100" alt="млбильное меню" width="40" height="30">
+      </a>
+      <ul class="page-header__navigation site-navigation">
+        <li class="site-navigation__item site-list__item--active">
+          <a class="site-navigation__link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">
+            Фотографии
+            </a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">
+            Конкурс
+          </a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">
+            Html Academy
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main class="page-main">
+      <section class="download centered page-title">
+        <h2 class="visually-hidden">Скачайте приложение Pink</h2>
+        <img class="download__img" src="http://placehold.it/150x100" alt="Пример фильтров Pink" width="300" height="500">
+        <div class="download__wrapper download-block">
+          <a class="download-block__button button">
+            Скачать приложение
+          </a>
+          <ul class="download-block__list platform-list">
+            <li class="platform-list_item"><a class="platform-list__apple" href="#"></a></li>
+            <li class="platform-list_item"><a class="platform-list__android" href="#"></a></li>
+            <li class="platform-list_item"><a class="platform-list__windows" href="#"></a></li>
+          </ul>
+          <small class="download-block__info">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window
+          </small>
+        </div>
+      </section>
+      <section class="features centered">
+        <h2 class="visually hidden">Преимущества приложения Pink</h2>
+        <div>
+          <p class="features__question question"></p>
+          <p class="features__question question"></p>
+          <ul class="features_list">
+            <li class="features_item">
+              <h3 class="features_title">Поднимает настроение</h3>
+              <P class="features_text">
+                Приложение позволит вам победить осеннюю хандру и депрессияю буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="features_item">
+              <h3 class="features_title">Меняет мир вокруг</h3>
+              <P class="features_text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="features_item">
+              <h3 class="features_title">Заводит новых друзей</h3>
+              <P class="features_text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+          <img class="features_last-img" src="http://placehold.it/150x100" alt="Всем привет!" width="150" height="300">
+        </div>
+      </section>
+      <section class="feedback centered">
+        <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+        <ul class="feedback__list slider-list">
+          <li class="feedback__item slider-list__item">
+            <h3 class="feedback__title">Николай Петров</h3>
+            <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+        </ul>
+        <div class="feedback__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--avtive" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+        </div>
+      </section>
+      <section class="pricing">
+        <h2 class="visually-hidden">Наши тарифы</h2>
+        <ul class="pricing__list">
+          <li class="pricing__item pricing__item--hit">
+            <header class="pricing__header">
+              <img class="pricing__hit" src="http://placehold.it/40x40" alt="Хит" width="40" height="40">
+              <h3 class="pricing__title">Стандарт</h3>
+              <p class="pricing__prise">3,99 USD</p>
+            </header>
+            <ul class="pricing__includes">
+              <li class="pricing__pink-filter">
+                <span class="pricing__includes-text pricing__includes-text--checked">Розовый фильтр</span>
+              </li>
+              <li class="pricing__smiles">
+                <span class="pricing__includes-text pricing__includes-text--checked">Смайлики</span>
+              </li>
+              <li class="pricing__comments">
+                <span class="pricing__includes-text pricing__includes-text--unchecked">Комментарии</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="pricing__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--avtive" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
+      </section>
+      <footer class="page-footer">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контактная информация сервиса Pink</h2>
+          <p class="contacts__question question"></p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__title">Звоние:</h3>
+              <p class="contacts_info">+7(812)555-66-66</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__title">Пишите:</h3>
+              <p class="contacts_info">mail@htmlacademy.ru</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__title">Приезжайте в гости</h3>
+              <p class="contacts_info">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </section>
+        <section class="map">
+          <h2 class="visually-hidden">Наш офис на карте</h2>
+          <img class="map__img" src="http://placehold.it/300x200" alt="Наш офис на карте" width="300" height="200">
+        </section>
+      </footer>
+    </main>
   </body>
 </html>
