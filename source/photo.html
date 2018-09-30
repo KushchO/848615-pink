@@ -6,10 +6,10 @@
 </head>
 <body>
   <header class="page-header centered">
-      <a class="page-header__logo not-main" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/100x50" alt="Логтип Pink" width="100" height="504">
-      </a>
-      <img class="page-header__burger-menu" src="http://placehold.it/150x100" alt="млбильное меню" width="40" height="30">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логтип Pink" width="100" height="50">
+    </a>
+    <button class="page-header__burger-menu"></button>
       <ul class="page-header__navigation site-navigation">
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="#">
@@ -95,16 +95,18 @@
           <img src="http://placehold.it/150x100" alt="Ваше фото">
           <ul class="make-post__effects-list">
               <li class="make-post__effects-item">
-                <img class="make-post__crop make-post__crop--active" src="http://placehold.it/35x35" alt="Кроп" width="35" height="35">
+                <label class="make-post__crop make-post__crop--active" for="crop-tool"></label>
               </li>
               <li class="make-post__effects-item">
-                <img class="make-post__brightness make-post__brightness--active" src="http://placehold.it/35x35" alt="Кроп" width="35" height="35">
+                <label class="make-post__brightness" for="brightness-tool"></label>
               </li>
               <li class="make-post__effects-item">
-                <img class="make-post__contrast make-post__contrast--active" src="http://placehold.it/35x35" alt="Кроп" width="35" height="35">
+                <label class="make-post__contrast" for="contrast-tool"></label>
               </li>
             </ul>
-            <div class="make-post__range"></div>
+            <input id="crop-tool" class="make-post__range" type="range">
+            <input id="brightness-tool" class="make-post__range" type="range">
+            <input id="contrast-tool" class="make-post__range" type="range">
             <div class="make-post__buttons-wrapper">
               <a class="make-post__post-it button button--active" href="#" aria-label="Запостить">Запостить</a>
               <button class="make-post__cancel button button--disabled">Отмена</button>

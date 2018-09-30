@@ -9,8 +9,8 @@
       <h1 class="visually-hidden">Приветствуем вас на главной странице приложения Pink</h1>
       <a class="page-header__logo" href="#">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логтип Pink" width="100" height="50">
-        <img class="page-header__burger-menu" src="http://placehold.it/150x100" alt="млбильное меню" width="40" height="30">
       </a>
+      <button class="page-header__burger-menu"></button>
       <ul class="page-header__navigation site-navigation">
         <li class="site-navigation__item site-list__item--active">
           <a class="site-navigation__link" href="#">
@@ -55,8 +55,8 @@
       <section class="features centered">
         <h2 class="visually hidden">Преимущества приложения Pink</h2>
         <div>
-          <p class="features__question question"></p>
-          <p class="features__question question"></p>
+          <p class="features__question question">Устали от серости мегаполиса?</p>
+          <p class="features__question question">Нам есть, что вам предложить!</p>
           <ul class="features_list">
             <li class="features_item">
               <h3 class="features_title">Поднимает настроение</h3>
@@ -96,56 +96,61 @@
       </section>
       <section class="pricing">
         <h2 class="visually-hidden">Наши тарифы</h2>
-        <ul class="pricing__list">
-          <li class="pricing__item pricing__item--hit">
-            <header class="pricing__header">
+        <table class="pricing__item">
+          <tr class="pricing__tariff">
+            <th colspan="2">
               <img class="pricing__hit" src="http://placehold.it/40x40" alt="Хит" width="40" height="40">
               <h3 class="pricing__title">Стандарт</h3>
               <p class="pricing__prise">3,99 USD</p>
-            </header>
-            <ul class="pricing__includes">
-              <li class="pricing__pink-filter">
-                <span class="pricing__includes-text pricing__includes-text--checked">Розовый фильтр</span>
-              </li>
-              <li class="pricing__smiles">
-                <span class="pricing__includes-text pricing__includes-text--checked">Смайлики</span>
-              </li>
-              <li class="pricing__comments">
-                <span class="pricing__includes-text pricing__includes-text--unchecked">Комментарии</span>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            </th>
+          </tr>
+          <tr>
+            <td class="pricing__pink-filter">
+              <span class="pricing__includes-text pricing__includes-text--checked">Розовый фильтр</span>
+            </td>
+            <td>\/</td>
+          </tr>
+          <tr>
+            <td class="pricing__smiles">
+              <span class="pricing__includes-text pricing__includes-text--checked">Смайлики</span>
+            </td>
+            <td>\/</td>
+          </tr>
+          <tr>
+            <td class="pricing__comments">
+              <span class="pricing__includes-text pricing__includes-text--unchecked">Комментарии</span>
+            </td>
+            <td>X</td>
+          </tr>
+        </table>
         <div class="pricing__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle slider__toggle--avtive" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </div>
       </section>
-      <footer class="page-footer">
-        <section class="contacts">
-          <h2 class="visually-hidden">Контактная информация сервиса Pink</h2>
-          <p class="contacts__question question"></p>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <h3 class="contacts__title">Звоние:</h3>
-              <p class="contacts_info">+7(812)555-66-66</p>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__title">Пишите:</h3>
-              <p class="contacts_info">mail@htmlacademy.ru</p>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__title">Приезжайте в гости</h3>
-              <p class="contacts_info">ул. Большая Конюшенная, 19/8</p>
-            </li>
-          </ul>
-        </section>
-        <section class="map">
-          <h2 class="visually-hidden">Наш офис на карте</h2>
-          <img class="map__img" src="http://placehold.it/300x200" alt="Наш офис на карте" width="300" height="200">
-        </section>
-      </footer>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контактная информация сервиса Pink</h2>
+        <p class="contacts__question question"></p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__title">Звоние:</h3>
+            <p class="contacts_info">+7(812)555-66-66</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Пишите:</h3>
+            <p class="contacts_info">mail@htmlacademy.ru</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Приезжайте в гости</h3>
+            <p class="contacts_info">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Наш офис на карте</h2>
+        <img class="map__img" src="http://placehold.it/300x200" alt="Наш офис на карте" width="300" height="200">
+      </section>
     </main>
   </body>
 </html>
