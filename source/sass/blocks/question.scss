@@ -1,0 +1,7 @@
+@import '../veraibles.scss';
+@import '../mixins.scss';
+
+.question {
+  @include big-light-text;
+  text-align: center;
+}

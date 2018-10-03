@@ -1,0 +1,21 @@
+@import '../veraibles.scss';
+@import '../mixins.scss';
+
+.site-navigation {
+  width: 100%;
+  @include reset-list;
+}
+
+.site-navigation__link,
+.site-navigation__item {
+  width: 100%;
+  display: block;
+}
+
+.site-navigation__link {
+  @include titles-white;
+  text-decoration: none;
+  background-color: #283645;
+}
+
+

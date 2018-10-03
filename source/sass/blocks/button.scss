@@ -1,0 +1,20 @@
+.button {
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  @include mobile-block;
+  text-align: center;
+}
+
+.button--active {
+  color: $red;
+  border-color: $red;
+}
+
+.button--disabled {
+  background: transparent;
+  border-color: #dddfe0;
+  color: #e3e4e4;
+}

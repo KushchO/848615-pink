@@ -1,0 +1,5 @@
+body {
+  font: $regular-font 'Open Sans', sans-serif;
+  color: #283645;
+  @include centered;
+}

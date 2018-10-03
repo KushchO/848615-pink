@@ -1,0 +1,20 @@
+.contacts {
+  @include mobile-block-padding;
+  text-align: center;
+}
+
+.contacts__list {
+  @include reset-list;
+}
+
+.contacts__title {
+  @include titles;
+  @include reset-margin-padding;
+}
+
+.contacts_info {
+  @include big-light-text;
+  @include reset-margin-padding;
+  color: #d22856;
+  margin-bottom: 20px;
+}

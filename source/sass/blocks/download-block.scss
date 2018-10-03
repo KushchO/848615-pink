@@ -1,0 +1,47 @@
+//@import '../veraibles.scss';
+//@import '../mixins.scss';
+
+.download-block {
+  background-color: #283645;
+  @include mobile-block-padding;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+}
+
+.download-block__button {
+  margin-bottom: 32px;
+}
+
+.download-block__list {
+  @include flex-container;
+  @include reset-list;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-content: center;
+}
+
+.download-block__link {
+  display: inline-block;
+  line-height: 60px;
+
+}
+
+.download-block__svg {
+  vertical-align: middle;
+}
+
+.download-block_item {
+  margin-left: 35px;
+}
+
+.download-block_item:last-child {
+  margin-right: 35px;
+}
+
+.download-block__info {
+  @include reset-margin-padding;
+  text-align: center;
+  color: white;
+  font-weight: $font-light;
+}

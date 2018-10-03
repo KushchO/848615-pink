@@ -1,0 +1,19 @@
+.page-footer__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-footer__maintained-link {
+  @include flex-container;
+  justify-content: center;
+  text-decoration: none;
+  color: #283645;
+}
+
+.page-footer__maintained {
+  margin-bottom: 40px;
+}
+
+.page-footer__maintained-logo {
+  margin-left: 15px;
+}

@@ -1,0 +1,16 @@
+.page-title {
+
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.page-title_title {
+  @include reset-margin-padding;
+  @include big-light-text;
+  @include mobile-block-padding;
+  padding-top: 30px;
+  padding-bottom: 48px;
+  color: #ffffff;
+  text-align: center;
+}

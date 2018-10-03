@@ -1,0 +1,21 @@
+@import '../veraibles.scss';
+@import '../mixins.scss';
+
+.feedback {
+  @include mobile-block-padding;
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.feedback__title {
+  @include titles;
+}
+
+.feedback__text {
+  line-height: 30px;
+}
+
+.feedback__list {
+  @include reset-list;
+}

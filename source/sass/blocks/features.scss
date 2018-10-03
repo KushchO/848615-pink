@@ -1,0 +1,33 @@
+@import '../veraibles.scss';
+@import '../mixins.scss';
+
+.features {
+  @include block-outline;
+  text-align: center;
+}
+
+.features__white-wrapper {
+  background: #ffffff;
+  @include mobile-block-padding;
+}
+
+.features__beige-wrapper {
+  @include mobile-block-padding;
+  background-color: #f2f2f2;
+}
+
+.features__list {
+  @include reset-list;
+}
+
+.features__title {
+  @include titles;
+}
+
+.features__triangle {
+  margin-left: -20px;
+}
+
+.features__triangle polygon {
+  fill: #fff;
+}
