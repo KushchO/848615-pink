@@ -16,7 +16,7 @@
 @mixin mobile-block-padding {
   width: 100%;
   box-sizing: border-box;
-  padding: $mobile-block-padding
+  padding: $mobile-block-padding;
 }
 
 @mixin mobile-block {
@@ -58,3 +58,5 @@
   font-size: $large-font;
   font-weight: $font-light;
 }
+
+
