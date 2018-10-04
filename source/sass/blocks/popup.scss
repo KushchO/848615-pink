@@ -1,0 +1,7 @@
+.popup {
+  text-align: center;
+}
+
+.popup__title {
+  @include titles;
+}

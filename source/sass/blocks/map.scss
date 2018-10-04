@@ -1,0 +1,17 @@
+.map {
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 -440px;
+  position: relative;
+  height: 200px;
+}
+
+.map__svg {
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.map__poly {
+  fill: #ffffff;
+}

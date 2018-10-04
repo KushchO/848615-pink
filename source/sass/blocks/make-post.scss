@@ -1,0 +1,47 @@
+.make-post {
+  width: 100%;
+  text-align: center;
+}
+
+.make-post__effects-list {
+  @include flex-container;
+  @include reset-list;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.make-post__effects-item {
+  align-content: center;
+  position: relative;
+}
+
+.make-post__svg {
+  fill: $gray;
+}
+
+.make-post__svg--active {
+  fill: $red;
+}
+
+.make-post__post-it {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.make-post__range {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+.make-post__crop--active ~ input {
+  display: block;
+}
+
+.make-post__fill--active ~ input {
+  display: block;
+}
+
+.make-post__contrast--active ~ input {
+  display: block;
+}

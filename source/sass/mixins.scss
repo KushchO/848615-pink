@@ -1,0 +1,60 @@
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin block-outline {
+  border: 1px solid #283645;
+}
+
+@mixin centered {
+  margin: 0 auto;
+  width: $mobile-width;
+}
+
+@mixin mobile-block-padding {
+  width: 100%;
+  box-sizing: border-box;
+  padding: $mobile-block-padding;
+}
+
+@mixin mobile-block {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+@mixin flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@mixin reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin social-link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px 20px;
+}
+
+@mixin titles {
+  font-size: $title-font;
+  font-weight: bold;
+}
+
+@mixin titles-white {
+  font-size: $title-font;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+@mixin big-light-text {
+  font-size: $large-font;
+  font-weight: $font-light;
+}

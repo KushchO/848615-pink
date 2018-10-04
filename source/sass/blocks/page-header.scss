@@ -1,0 +1,6 @@
+.page-header {
+  @include block-outline;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  text-align: center;
+}

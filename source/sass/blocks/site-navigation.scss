@@ -1,0 +1,16 @@
+.site-navigation {
+  @include reset-list;
+  width: 100%;
+}
+
+.site-navigation__link,
+.site-navigation__item {
+  width: 100%;
+  display: block;
+}
+
+.site-navigation__link {
+  @include titles-white;
+  text-decoration: none;
+  background-color: #283645;
+}

@@ -1,0 +1,21 @@
+.best-panorama {
+  position: relative;
+}
+
+.best-panorama__mark {
+  @include titles-white;
+  font-size: 12px;
+  width: 140px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $red;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.best-panorama__img {
+  margin-left: -20px;
+}
