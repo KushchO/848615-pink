@@ -1,9 +1,10 @@
+/*SASS*/
 @import "veraibles.scss";
 @import "mixins.scss";
-
+/*Utility*/
 @import "fonts.scss";
 @import "general.scss";
-
+/*blocks*/
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/site-navigation.scss";
 @import "../sass/blocks/visually-hidden.scss";
