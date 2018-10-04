@@ -1,6 +1,3 @@
-@import '../veraibles.scss';
-@import '../mixins.scss';
-
 .site-navigation {
   width: 100%;
   @include reset-list;
@@ -17,5 +14,3 @@
   text-decoration: none;
   background-color: #283645;
 }
-
-
