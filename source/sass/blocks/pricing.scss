@@ -37,8 +37,8 @@
 }
 
 .pricing__includes-row {
-  background-color: #ffffff;
   @include mobile-block-padding;
+  background-color: #ffffff;
 }
 
 .pricing__hit-element {

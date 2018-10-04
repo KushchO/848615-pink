@@ -4,8 +4,8 @@
 }
 
 .features__white-wrapper {
-  background: #ffffff;
   @include mobile-block-padding;
+  background: #ffffff;
 }
 
 .features__beige-wrapper {
@@ -26,5 +26,5 @@
 }
 
 .features__triangle polygon {
-  fill: #fff;
+  fill: #ffffff;
 }

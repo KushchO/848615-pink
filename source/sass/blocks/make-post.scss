@@ -5,11 +5,8 @@
 
 .make-post__effects-list {
   @include flex-container;
-  justify-content: center;
-}
-
-.make-post__effects-list {
   @include reset-list;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -28,14 +25,13 @@
 
 .make-post__post-it {
   text-decoration: none;
-}
-
-.make-post__post-it {
   margin-bottom: 10px;
 }
 
 .make-post__range {
   display: none;
+  position: absolute;
+  top: 60px;
 }
 
 .make-post__crop--active ~ input {
@@ -46,11 +42,6 @@
   display: block;
 }
 
-.make-post__contradt--active ~ input {
+.make-post__contrast--active ~ input {
   display: block;
-}
-
-.make-post__range {
-  position: absolute;
-  top: 60px;
 }

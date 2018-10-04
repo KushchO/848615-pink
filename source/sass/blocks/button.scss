@@ -1,10 +1,10 @@
 .button {
+  @include mobile-block;
   border: 2px solid #ffffff;
   border-radius: 20px;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
-  @include mobile-block;
   text-align: center;
 }
 

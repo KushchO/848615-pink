@@ -1,9 +1,8 @@
 .download-block {
-  background-color: #283645;
   @include mobile-block-padding;
+  background-color: #283645;
   padding-top: 28px;
   padding-bottom: 28px;
-
 }
 
 .download-block__button {
@@ -21,7 +20,6 @@
 .download-block__link {
   display: inline-block;
   line-height: 60px;
-
 }
 
 .download-block__svg {
