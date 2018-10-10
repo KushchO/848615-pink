@@ -4,19 +4,24 @@
   padding: 0;
 }
 
-@mixin block-outline {
-  border: 1px solid #283645;
-}
-
-@mixin centered {
+@mixin centered($width) {
   margin: 0 auto;
-  width: $mobile-width;
+  width: $width;
 }
 
-@mixin mobile-block-padding {
+@mixin block-padding($padding) {
   width: 100%;
   box-sizing: border-box;
-  padding: $mobile-block-padding;
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+@mixin hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 @mixin mobile-block {
@@ -27,7 +32,7 @@
 
 @mixin flex-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 @mixin reset-margin-padding {
