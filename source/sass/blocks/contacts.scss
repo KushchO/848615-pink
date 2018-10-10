@@ -1,5 +1,5 @@
 .contacts {
-  @include mobile-block-padding;
+  @include block-padding($mobile-block-padding);
   text-align: center;
 }
 
@@ -18,3 +18,15 @@
   color: #d22856;
   margin-bottom: 20px;
 }
+
+@media (min-width: 660px) {
+  .contacts__list {
+    @include flex-container;
+  }
+
+  .contacts__item {
+    width: 300px;
+    margin: auto;
+  }
+}
+

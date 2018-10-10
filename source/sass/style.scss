@@ -4,7 +4,10 @@
 /*Utility*/
 @import "fonts.scss";
 @import "general.scss";
-/*blocks*/
+/*Base blocks*/
+@import "../sass/blocks/form-button.scss";
+@import "../sass/blocks/button.scss";
+/*Blocks*/
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/site-navigation.scss";
 @import "../sass/blocks/visually-hidden.scss";
@@ -17,11 +20,11 @@
 @import "../sass/blocks/contacts.scss";
 @import "../sass/blocks/map.scss";
 @import "../sass/blocks/contest.scss";
-@import "../sass/blocks/form-button.scss";
 @import "../sass/blocks/page-footer.scss";
 @import "../sass/blocks/social-list.scss";
 @import "../sass/blocks/popup.scss";
 @import "../sass/blocks/gallery.scss";
 @import "../sass/blocks/best-panorama.scss";
 @import "../sass/blocks/make-post.scss";
-@import "../sass/blocks/button.scss";
+@import "../sass/blocks/page-wrapper.scss";
+@import "../sass/blocks/funny-info.scss";

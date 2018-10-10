@@ -12,17 +12,19 @@
 }
 
 .pricing__tariff {
-  background-color: #283645;
-  background-image: url("../../img/bg-hit.svg");
-  background-repeat: no-repeat;
-  background-position-x: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .pricing__heading {
+  display: none;
+  background-color: #283645;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.pricing__heading--empty {
+  display: none;
 }
 
 .pricing__title {
@@ -37,21 +39,37 @@
 }
 
 .pricing__includes-row {
-  @include mobile-block-padding;
+  @include flex-container;
   background-color: #ffffff;
+  justify-content: space-between;
+}
+.pricing__heading--hit {
+  position: relative;
+  background-image: url("../../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.pricing__heading--visible{
+  display: block;
+  width: 320px;
 }
 
 .pricing__hit-element {
   color: #ffffff;
   position: absolute;
   top: 20px;
-  left: 30px;
+  left: 10px;
   transform: rotate(-45deg);
 }
 
 .pricing__includes {
+  display: none;
   width: 28px;
   height: 28px;
+}
+
+.pricing__includes--visble {
+  display: table-cell;
 }
 
 .pricing__includes--checked {
@@ -59,11 +77,11 @@
   height: 32px;
 }
 
-.pricing__includes-yes {
+.pricing__includes--yes {
   fill: #3dc644;
 }
 
-.pricing__includes-no {
+.pricing__includes--no {
   fill: #f25b26;
 }
 
@@ -73,4 +91,30 @@
 
 .pricing__triangle {
   margin-bottom: 75px;
+}
+
+@media (min-width: 660px) {
+  .pricing__heading {
+    width: 160px;
+    display: table-cell;
+  }
+
+  .pricing__toggles {
+    display: none;
+  }
+
+  .pricing__includes,
+  .pricing__heading--empty {
+    display: table-cell;
+  }
+
+  .pricing__includes-row {
+    display: table-row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pricing {
+    @include block-padding($desktop-block-padding);
+  }
 }
