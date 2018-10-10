@@ -92,18 +92,12 @@
     @include flex-container;
     margin-top: auto;
   }
-
-  .make-post__post-it,
-  .make-post__cancel {
-  }
 }
 
 @media (min-width: 1200px) {
   .make-post {
     @include block-padding($desktop-block-padding);
   }
-
-
 
   .make-post__interactive-wrapper {
     width: 530px;
