@@ -1,6 +1,8 @@
 .make-post {
+  @include block-padding($mobile-block-padding);
   width: 100%;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .make-post__effects-list {
@@ -30,8 +32,7 @@
 
 .make-post__range {
   display: none;
-  position: absolute;
-  top: 60px;
+
 }
 
 .make-post__crop--active ~ input {
@@ -45,3 +46,77 @@
 .make-post__contrast--active ~ input {
   display: block;
 }
+
+.make_post__your-img {
+  background-image: url("../../img/photo-road-mobile@1x.jpg");
+  width: 280px;
+  height: 375px;
+}
+
+@media (min-width: 660px) {
+  .make_post__tool-wrapper {
+    @include flex-container;
+  }
+  .make-post__interactive-wrapper {
+    @include flex-container;
+  }
+
+  .make_post__your-img {
+    background-image: url("../../img/photo-road-tablet@1x.jpg");
+    width: 300px;
+    height: 400px;
+  }
+
+  .make-post__interactive-wrapper {
+    width: 320px;
+  }
+
+  .make-post__effects-list {
+    width: 100%;
+  }
+
+  .make-post__effects-item {
+    @include flex-container;
+    width: 100%;
+  }
+
+  .make-post__buttons-wrapper {
+    width: 100%;
+  }
+
+  .make-post__range {
+    display: block;
+  }
+
+  .make-post__buttons-wrapper {
+    @include flex-container;
+    margin-top: auto;
+  }
+
+  .make-post__post-it,
+  .make-post__cancel {
+  }
+}
+
+@media (min-width: 1200px) {
+  .make-post {
+    @include block-padding($desktop-block-padding);
+  }
+
+
+
+  .make-post__interactive-wrapper {
+    width: 530px;
+  }
+
+  .make-post__post-it,
+  .make-post__cancel {
+    width: 40%;
+    margin: 0 2.5%;
+  }
+}
+
+
+
+
+

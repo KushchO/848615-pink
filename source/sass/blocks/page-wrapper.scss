@@ -1,0 +1,15 @@
+.page-wrapper {
+  @include centered($mobile-width);
+}
+
+@media (min-width: 660px) {
+  .page-wrapper {
+    @include centered($tablet-width);
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-wrapper {
+    @include centered($desktop-width);
+  }
+}

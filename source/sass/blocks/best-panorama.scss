@@ -19,3 +19,30 @@
 .best-panorama__img {
   margin-left: -20px;
 }
+
+@media (min-width: 660px) {
+  .best-panorama {
+    width: 100%;
+    .gallery__meta {
+      @include flex-container;
+      justify-content: space-between;
+    }
+    .gallery__likes {
+      order: 1;
+    }
+
+    .gallery__message {
+      order: 2;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .best-panorama__img {
+      margin-left: -130px;
+    }
+  }
+
+
+
+
+}
