@@ -23,10 +23,12 @@
 @media (min-width: 660px) {
   .best-panorama {
     width: 100%;
+
     .gallery__meta {
       @include flex-container;
       justify-content: space-between;
     }
+
     .gallery__likes {
       order: 1;
     }

@@ -32,7 +32,6 @@
 
 .make-post__range {
   display: none;
-
 }
 
 .make-post__crop--active ~ input {
@@ -57,18 +56,16 @@
   .make_post__tool-wrapper {
     @include flex-container;
   }
+
   .make-post__interactive-wrapper {
     @include flex-container;
+    width: 320px;
   }
 
   .make_post__your-img {
     background-image: url("../../img/photo-road-tablet@1x.jpg");
     width: 300px;
     height: 400px;
-  }
-
-  .make-post__interactive-wrapper {
-    width: 320px;
   }
 
   .make-post__effects-list {
@@ -81,16 +78,13 @@
   }
 
   .make-post__buttons-wrapper {
+    @include flex-container;
+    margin-top: auto;
     width: 100%;
   }
 
   .make-post__range {
     display: block;
-  }
-
-  .make-post__buttons-wrapper {
-    @include flex-container;
-    margin-top: auto;
   }
 }
 

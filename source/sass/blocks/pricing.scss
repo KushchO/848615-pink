@@ -43,13 +43,14 @@
   background-color: #ffffff;
   justify-content: space-between;
 }
+
 .pricing__heading--hit {
   position: relative;
   background-image: url("../../img/bg-hit.svg");
   background-repeat: no-repeat;
 }
 
-.pricing__heading--visible{
+.pricing__heading--visible {
   display: block;
   width: 320px;
 }

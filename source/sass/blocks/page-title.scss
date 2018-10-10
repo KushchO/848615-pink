@@ -9,7 +9,7 @@
   background-image:
     url("../../img/iphone-hand-mobile@1x.png"),
     url("../../img/bg-back-mobile@1x.jpg");
-    padding-top: 260px;
+  padding-top: 260px;
 }
 
 .page-title__title {
@@ -38,7 +38,7 @@
     background-image:
       url("../../img/iphone-hand-tablet@1x.png"),
       url("../../img/bg-back-tablet@1x.jpg");
-      background-position: 0 140px, 0 0;
+    background-position: 0 140px, 0 0;
   }
 
   .page-title__wrapper {
@@ -58,6 +58,7 @@
 
 @media (min-width: 1200px) {
   .page-title {
+    @include block-padding($desktop-block-padding);
     background-image: url("../../img/bg-back-desktop@1x.jpg");
   }
 
@@ -65,8 +66,5 @@
     background-image:
       url("../../img/iphone-hand-desktop@1x.png"),
       url("../../img/bg-back-desktop@1x.jpg");
-  }
-  .page-title {
-    @include block-padding($desktop-block-padding);
   }
 }

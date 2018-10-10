@@ -126,9 +126,9 @@ input:checked ~ .contest__label-check .contest__radio-box {
 
   .contest_item-input {
     &--inline {
-    @include flex-container;
-    flex-wrap: nowrap;
-    margin-left: 20px;
+      @include flex-container;
+      flex-wrap: nowrap;
+      margin-left: 20px;
     }
   }
 
@@ -155,11 +155,11 @@ input:checked ~ .contest__label-check .contest__radio-box {
 
   .contest__emotions {
     border: 1px solid #e5e5e5;
-    order: 4
+    order: 4;
   }
 
   .contest_button {
-    order: 5
+    order: 5;
   }
 
   .contest__about-required {
