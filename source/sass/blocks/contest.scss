@@ -3,7 +3,6 @@
 }
 
 .contest__info {
-  @include block-padding($mobile-block-padding);
   text-align: center;
 }
 
@@ -13,7 +12,7 @@
 .contest__contacts,
 .contest__emotions {
   @include reset-margin-padding;
-  @include block-padding($mobile-block-padding);
+  @include mobile-block-padding;
   border: none;
   margin-bottom: 42px;
 }
@@ -32,7 +31,7 @@
 }
 
 .contest__archievements-list {
-  @include block-padding($mobile-block-padding);
+  @include mobile-block-padding;
   @include reset-list;
 }
 
@@ -45,10 +44,6 @@
   text-transform: uppercase;
   color: #d22856;
   margin-bottom: 35px;
-
-  &--hidden {
-    display: none;
-  }
 }
 
 .contest__radio,
@@ -116,91 +111,4 @@ input:checked ~ .contest__label-check .contest__radio-box {
 
 .contest__highlighted {
   color: #d22856;
-}
-
-@media (min-width: 660px) {
-  .contest__form {
-    @include flex-container;
-    justify-content: space-between;
-  }
-
-  .contest_item-input {
-    &--inline {
-    @include flex-container;
-    flex-wrap: nowrap;
-    margin-left: 20px;
-    }
-  }
-
-  .contest_item-input--inline label {
-    margin-right: 20px;
-  }
-
-  .contest__app-type {
-    order: 1;
-    background: transparent;
-    border: 1px solid #e5e5e5;
-  }
-
-  .contest__contacts {
-    order: 2;
-    border: 1px solid #e5e5e5;
-  }
-
-  .contest__archievements {
-    order: 3;
-    background: transparent;
-    border: 1px solid #e5e5e5;
-  }
-
-  .contest__emotions {
-    border: 1px solid #e5e5e5;
-    order: 4
-  }
-
-  .contest_button {
-    order: 5
-  }
-
-  .contest__about-required {
-    order: 6;
-  }
-
-  .contest__title {
-    width: auto;
-
-    &--hidden {
-      display: block;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .contest__form {
-    @include block-padding($desktop-block-padding);
-  }
-
-  .contest__personal-info,
-  .contest__app-type {
-    width: 45%;
-  }
-
-  .contest__contacts .contest__list {
-    @include flex-container;
-  }
-
-  .contest__contacts .contest_item-input {
-    width: 45%;
-    margin-left: 20px;
-  }
-
-  .contest__archievements-list {
-    @include flex-container;
-  }
-
-  .contest_button,
-  .contest__about-required {
-    width: auto;
-  }
-
 }

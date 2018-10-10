@@ -1,12 +1,12 @@
 .gallery_invitation {
-  @include block-padding($mobile-block-padding);
+  @include mobile-block-padding;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .gallery__list {
   @include reset-list;
-  @include block-padding($mobile-block-padding);
+  @include mobile-block-padding;
 }
 
 .gallery__item {
@@ -15,7 +15,7 @@
 }
 
 .gallery__meta {
-  @include block-padding($mobile-block-padding);
+  @include mobile-block-padding;
 }
 
 .gallery__info {
@@ -40,58 +40,8 @@
 .gallery__likes::before {
   content: "";
   display: inline-block;
-  width: 13px;
+  width: 12px;
   height: 12px;
   background-image: url("../../img/icon-heart-red.svg");
   margin-right: 17px;
-}
-
-.best-panorama__img {
-  background-image: url("../../img/panorama-mobile@1x.jpg");
-  width: 320px;
-  height: 137px;
-}
-
-
-
-@media (min-width: 660px) {
-  .gallery_invitation {
-    padding: 0 150px;
-  }
-
-  .best-panorama__img {
-    background-image: url("../../img/panorama-tablet@1x.jpg");
-    width: 660px;
-    height: 509px;
-  }
-
-  .gallery__likes {
-    @include flex-container;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .gallery__list {
-    @include flex-container;
-  }
-
-  .gallery__item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1200px) {
-
-  .best-panorama__img {
-    background-image: url("../../img/panorama-desktop@1x.jpg");
-    width: 1200px;
-    height: 506px;
-  }
-
-  .gallery__list {
-    @include block-padding($desktop-block-padding);
-  }
-  .gallery__item {
-    width: 30%;
-  }
 }

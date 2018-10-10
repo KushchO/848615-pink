@@ -1,5 +1,5 @@
 .feedback {
-  @include block-padding($mobile-block-padding);
+  @include mobile-block-padding;
   text-align: center;
   padding-top: 42px;
   padding-bottom: 42px;
@@ -15,37 +15,4 @@
 
 .feedback__list {
   @include reset-list;
-}
-
-.feedback__profile {
-  display: none;
-}
-
-.feedback__item {
-  display: none;
-}
-
-.feedback__item--first {
-  display: block;
-}
-
-@media (min-width: 660px) {
-  .feedback__item--first {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .feedback__profile{
-    display: block;
-  }
-}
-
-@media (min-width: 1200px) {
-  .feedback {
-    @include block-padding($desktop-block-padding);
-    padding-top: 100px;
-    background-image: url("../../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 10px;
-  }
 }

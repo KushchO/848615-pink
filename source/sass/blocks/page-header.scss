@@ -1,34 +1,6 @@
 .page-header {
-  @include flex-container;
-  @include block-padding($mobile-block-padding);
+  @include block-outline;
   background: rgba(0, 0, 0, 0.3);
   width: 100%;
   text-align: center;
-  justify-content: space-between;
-  min-height: 66px;
-  position: relative;
-  z-index: 10;
-  box-sizing: border-box;
-}
-
-.page-header--active-menu {
-  background: #283645;
-}
-
-@media (min-width: 660px) {
-  .page-header {
-    background: rgba(0, 0, 0, 0.3);
-
-  }
-}
-
-@media (min-width: 1200px) {
-  .page-header__burger-menu {
-    display: none;
-  }
-  .page-header {
-    @include block-padding($desktop-block-padding);
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
 }

@@ -1,8 +1,8 @@
 .download-block {
-  @include block-padding($mobile-block-padding);
+  @include mobile-block-padding;
+  background-color: #283645;
   padding-top: 28px;
   padding-bottom: 28px;
-  background-color: #1d2631;
 }
 
 .download-block__button {
@@ -27,7 +27,7 @@
 }
 
 .download-block_item {
-  margin-left: 30px;
+  margin-left: 35px;
 }
 
 .download-block_item:last-child {
@@ -39,15 +39,4 @@
   text-align: center;
   color: white;
   font-weight: $font-light;
-}
-
-@media (min-width: 660px) {
-  .download-block {
-    background: transparent;
-    width: 300px;
-  }
-
-  .download-block__list {
-
-  }
 }
