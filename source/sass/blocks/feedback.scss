@@ -44,7 +44,7 @@
   .feedback {
     @include block-padding($desktop-block-padding);
     padding-top: 100px;
-    background-image: url("../../img/icon-quotes.svg");
+    background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 10px;
   }

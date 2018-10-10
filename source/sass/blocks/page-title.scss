@@ -1,5 +1,5 @@
 .page-title {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   width: 100%;
   margin-bottom: 50px;
@@ -7,8 +7,8 @@
 
 .page-title--index {
   background-image:
-    url("../../img/iphone-hand-mobile@1x.png"),
-    url("../../img/bg-back-mobile@1x.jpg");
+    url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
   padding-top: 260px;
 }
 
@@ -28,7 +28,7 @@
 
 @media (min-width: 660px) {
   .page-title {
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     margin-top: -66px;
     padding-top: 166px;
     padding-bottom: 110px;
@@ -36,8 +36,8 @@
 
   .page-title--index {
     background-image:
-      url("../../img/iphone-hand-tablet@1x.png"),
-      url("../../img/bg-back-tablet@1x.jpg");
+      url("../img/iphone-hand-tablet@1x.png"),
+      url("../img/bg-back-tablet@1x.jpg");
     background-position: 0 140px, 0 0;
   }
 
@@ -59,12 +59,12 @@
 @media (min-width: 1200px) {
   .page-title {
     @include block-padding($desktop-block-padding);
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
   .page-title--index {
     background-image:
-      url("../../img/iphone-hand-desktop@1x.png"),
-      url("../../img/bg-back-desktop@1x.jpg");
+      url("../img/iphone-hand-desktop@1x.png"),
+      url("../img/bg-back-desktop@1x.jpg");
   }
 }

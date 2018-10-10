@@ -79,13 +79,13 @@
 }
 
 input:checked ~ .contest__label-check .contest__checkbox-box {
-  background-image: url("../../img/icon-yes-red.svg");
+  background-image: url("../img/icon-yes-red.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 input:checked ~ .contest__label-check .contest__radio-box {
-  background-image: url("../../img/icon-map-marker.svg");
+  background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }

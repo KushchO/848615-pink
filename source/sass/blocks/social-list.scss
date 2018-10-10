@@ -6,15 +6,15 @@
 
 .social-list__twitter {
   @include social-link;
-  background-image: url("../../img/icon-twitter-red.svg");
+  background-image: url("../img/icon-twitter-red.svg");
 }
 
 .social-list__facebook {
   @include social-link;
-  background-image: url("../../img/icon-facebook-red.svg");
+  background-image: url("../img/icon-facebook-red.svg");
 }
 
 .social-list__youtube {
   @include social-link;
-  background-image: url("../../img/icon-youtube-red.svg");
+  background-image: url("../img/icon-youtube-red.svg");
 }

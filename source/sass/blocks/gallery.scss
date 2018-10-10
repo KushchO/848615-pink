@@ -42,12 +42,12 @@
   display: inline-block;
   width: 13px;
   height: 12px;
-  background-image: url("../../img/icon-heart-red.svg");
+  background-image: url("../img/icon-heart-red.svg");
   margin-right: 17px;
 }
 
 .best-panorama__img {
-  background-image: url("../../img/panorama-mobile@1x.jpg");
+  background-image: url("../img/panorama-mobile@1x.jpg");
   width: 320px;
   height: 137px;
 }
@@ -58,7 +58,7 @@
   }
 
   .best-panorama__img {
-    background-image: url("../../img/panorama-tablet@1x.jpg");
+    background-image: url("../img/panorama-tablet@1x.jpg");
     width: 660px;
     height: 509px;
   }
@@ -80,7 +80,7 @@
 
 @media (min-width: 1200px) {
   .best-panorama__img {
-    background-image: url("../../img/panorama-desktop@1x.jpg");
+    background-image: url("../img/panorama-desktop@1x.jpg");
     width: 1200px;
     height: 506px;
   }

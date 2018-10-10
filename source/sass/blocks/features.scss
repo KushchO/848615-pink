@@ -29,7 +29,7 @@
 }
 
 .features__item--last {
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50px 120px;
   padding-bottom: 300px;
@@ -39,7 +39,7 @@
 @media (min-width: 660px) {
   .features__list {
     padding-left: 300px;
-    background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
   }
 
@@ -67,19 +67,19 @@
   }
 
   .features__item--1 {
-    background-image: url("../../img/iphone-screen-1-tablet@1x.png");
+    background-image: url("../img/iphone-screen-1-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
   }
 
   .features__item--2 {
-    background-image: url("../../img/iphone-screen-2-tablet@1x.png");
+    background-image: url("../img/iphone-screen-2-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
   }
 
   .features__item--3 {
-    background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
   }
