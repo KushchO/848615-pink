@@ -1,12 +1,19 @@
 .contacts {
   @include block-padding($mobile-block-padding);
   text-align: center;
+  padding-top: 18px;
+  margin-bottom: 35px;
+}
+
+.contacts__question {
+  @include reset-margin-padding;
+  margin-top: 28px;
+  margin-bottom: 35px;
 }
 
 .contacts__list {
   @include reset-list;
 }
-
 .contacts__title {
   @include titles;
   @include reset-margin-padding;

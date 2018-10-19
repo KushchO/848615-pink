@@ -175,7 +175,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .contest__form {
     @include block-padding($desktop-block-padding);
   }

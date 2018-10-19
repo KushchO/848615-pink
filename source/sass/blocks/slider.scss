@@ -1,0 +1,19 @@
+.slider__toggle {
+  @include reset-margin-padding;
+  width: 6px;
+  height: 6px;
+  background: #bec2c7;
+  border-radius: 50%;
+  border: none;
+
+  &:not(:first-child){
+    margin-left: 15px;
+  }
+
+  &--active {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 2px solid #000000;
+  }
+}

@@ -1,7 +1,7 @@
 .map {
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 -440px;
+  background-position: 0 -445px;
   position: relative;
   height: 200px;
 }
@@ -16,6 +16,27 @@
   fill: #ffffff;
 }
 
+.map__pointer {
+  position: absolute;
+  top: 93px;
+  left: 142px;
+  width: 36px;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 50%;
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background: $red;
+    border-radius: 50%;
+  }
+}
+
 @media (min-width: 660px) {
   .map {
     background-image: url("../img/bg-map-tablet@1x.jpg");
@@ -24,7 +45,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .map {
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;

@@ -1,8 +1,8 @@
 .feedback {
   @include block-padding($mobile-block-padding);
   text-align: center;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 45px;
+  padding-bottom: 40px;
 }
 
 .feedback__title {
@@ -10,7 +10,10 @@
 }
 
 .feedback__text {
+  @include reset-margin-padding;
   line-height: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .feedback__list {
@@ -21,12 +24,23 @@
   display: none;
 }
 
+.feedback__name {
+  @include reset-margin-padding;
+  @include titles;
+
+}
+
 .feedback__item {
   display: none;
 }
 
 .feedback__item--first {
   display: block;
+}
+
+
+.feedback__toggles {
+  margin-top: 28px;
 }
 
 @media (min-width: 660px) {
@@ -40,7 +54,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .feedback {
     @include block-padding($desktop-block-padding);
     padding-top: 100px;

@@ -1,14 +1,16 @@
 .pricing {
   text-align: center;
   background-color: #f2f2f2;
-  padding-bottom: 20px;
+  padding-bottom: 45px;
 }
 
-.pricing__item {
+.pricing__table {
   position: relative;
-  width: 100%;
+  left: -536px;
+  width: 1114px;
+  border: 2px solid #e5e5e5;
   border-collapse: collapse;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .pricing__tariff {
@@ -17,14 +19,18 @@
 }
 
 .pricing__heading {
-  display: none;
+  @include reset-margin-padding;
+  border: 2px solid #e5e5e5;
   background-color: #283645;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: table-cell;
+  width: 276px;
 }
 
 .pricing__heading--empty {
-  display: none;
+  background-color: transparent;
+  border: none;
 }
 
 .pricing__title {
@@ -39,20 +45,13 @@
 }
 
 .pricing__includes-row {
-  @include flex-container;
   background-color: #ffffff;
-  justify-content: space-between;
 }
 
 .pricing__heading--hit {
   position: relative;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
-}
-
-.pricing__heading--visible {
-  display: block;
-  width: 320px;
 }
 
 .pricing__hit-element {
@@ -64,18 +63,32 @@
 }
 
 .pricing__includes {
-  display: none;
+  @include reset-margin-padding;
+  border: 2px solid #e5e5e5;
   width: 28px;
   height: 28px;
 }
 
-.pricing__includes--visble {
-  display: table-cell;
+.pricing__cell-wrapper{
+  @include flex-container;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 15px 18px 20px;
+  text-transform: uppercase;
+
+  &--no {
+    padding-top: 15px;
+
+    .pricing__filter-on-mobile {
+      margin-top: 3px;
+    }
+  }
 }
 
 .pricing__includes--checked {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
 .pricing__includes--yes {
@@ -91,13 +104,12 @@
 }
 
 .pricing__triangle {
-  margin-bottom: 75px;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 660px) {
   .pricing__heading {
     width: 160px;
-    display: table-cell;
   }
 
   .pricing__toggles {
@@ -114,7 +126,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .pricing {
     @include block-padding($desktop-block-padding);
   }

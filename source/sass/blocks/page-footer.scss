@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-footer {
     @include block-padding($desktop-block-padding);
   }

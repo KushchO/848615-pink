@@ -8,7 +8,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-wrapper {
     @include centered($desktop-width);
   }
