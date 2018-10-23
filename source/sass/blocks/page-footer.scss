@@ -27,15 +27,68 @@
     @include block-padding($tablet-block-padding);
     @include flex-container;
     justify-content: space-between;
+    padding-top: 35px;
   }
+
+
 
   .page-footer__logo {
     margin: 0;
+  }
+
+  .page-footer__maintained {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .page-footer__maintained-link {
+    display: flex;
+  }
+
+  .page-footer__maintained-text {
+    margin: auto 0;
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+
+  .page-footer__maintained-logo {
+    margin: auto 0;
+    fill: #d22856;
+    margin-top: 12px;
+  }
+
+  .page-footer__logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .social-list__item:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .page-footer__social {
+    margin-left: -15px;
+    margin-top: 5px;
   }
 }
 
 @media (min-width: 960px) {
   .page-footer {
     @include block-padding($desktop-block-padding);
+    padding-top: 70px;
+  }
+
+  .page-footer__maintained-text {
+    font-size: $title-font;
+    margin-top: 15px;
+  }
+
+  .page-footer__social {
+    margin-left: 6px;
+    margin-top: 2px;
+  }
+
+  .page-footer__maintained-logo {
+    margin-top: 13px;
   }
 }

@@ -90,3 +90,12 @@
   height: $height;
   box-sizing: border-box;
 }
+
+@mixin radio-check($width: 35px, $height: 35px) {
+  width: $width;
+  height: $height;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  display: block;
+  margin-right: 30px;
+}

@@ -4,17 +4,32 @@
   justify-content: center;
 }
 
-.social-list__twitter {
-  @include social-link;
-  background-image: url("../img/icon-twitter-red.svg");
+.social-list__item {
+  position: relative;
+  margin: auto 0;
+  width: 45px;
+  height: 45px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
 }
 
-.social-list__facebook {
-  @include social-link;
-  background-image: url("../img/icon-facebook-red.svg");
+.page-footer__social-svg {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  fill: #d22856;
 }
 
-.social-list__youtube {
-  @include social-link;
-  background-image: url("../img/icon-youtube-red.svg");
+.social-list__facebook .page-footer__social-svg {
+  top: 14px;
+  left: 19px;
 }
+
+.social-list__twitter .page-footer__social-svg {
+  top: 17px;
+  left: 15px;
+}
+
+
+
+

@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <svg style="display:none">
-      <symbol viewBox="0 0 1200 94.074" id="triangle-spacer">
-        <polygon points="1200,0 0,0 0,94.074 "/>
-      </symbol>
-      <symbol viewBox="0 0 298 345.097" id="clock-outer">
-          <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
-      </symbol>
-    </svg>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="page-wrapper">
       <header class="page-header page-header--no-js page-header--open-menu">
         <div class="page-header__nav-wrapper">
           <div class="page-header__first-line">
             <h1 class="visually-hidden">Приветствуем вас на главной странице приложения Pink</h1>
-            <a class="page-header__logo" href="#" aria-label="Главная страница приложения Pink"></a>
+            <a class="page-header__logo" href="#" aria-label="Главная страница приложения Pink">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg">
+              </picture>
+            </a>
             <button class="page-header__burger-menu  page-header__burger-menu--closed"></button>
         </div>
           <ul class="page-header__navigation site-navigation site-navigation--closed">
@@ -101,8 +102,8 @@
             <div class="features__traingle"></div>
           </div>
           <div class="features__beige-wrapper">
-            <svg class="features__triangle" width="320" height="25">
-                <use xlink:href="#triangle-spacer"></use>
+            <svg class="features__triangle triangle-spacer" width="320" height="25">
+                <use xlink:href="#bg-triangle-white"></use>
             </svg>
             <ul class="features__list">
               <li class="features__item features__item--1">
@@ -116,7 +117,7 @@
                 <img class="features__img" src="img/iphone-screen-2-desktop@1x.png" alt="Pink на вашем экране" width="292" height="300">
                 <h3 class="features__title">Меняет мир вокруг</h3>
                 <P class="features__text">
-                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="features__br1"> усилить эффект
                 </p>
               </li>
               <li class="features__item features__item--last features__item--3">
@@ -133,14 +134,14 @@
         <section class="funny-info">
           <div class="funny-info__picture-wrapper" >
             <svg class="funny-info__clock" width="238" height="267">
-              <use class="funny-info__clock-container" xlink:href="#clock-outer"></use>
+              <use class="funny-info__clock-container" xlink:href="#icon-timer"></use>
             </svg>
           </div>
           <div class="funny-info__text-wrapper">
             <h3 class="funny-info__title">Эффект</h3>
             <h3 class="funny-info__title"> на 24 часа!</h3>
             <p class="funny-info__text">Британские ученые провели исследования
-                и доказали, что положительный эффект
+                и доказали,<br class="funny-info__br"> что положительный эффект<br class="funny-info__br-tab">
                 от использования приложения длится
                 целые сутки!
             </p>
@@ -149,13 +150,16 @@
         </section>
         <section class="feedback centered">
           <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+          <svg class="feedback__quotes" width="79" height="63">
+            <use xlink:href="#icon-quotes"></use>
+          </svg>
           <ul class="feedback__list slider-list">
             <li class="feedback__item slider-list__item feedback__item--first">
               <div class="feedback__person">
               <h3 class="feedback__name">Николай Петров</h3>
               <p class="feedback__profile">25 лет, водитель трамвая</p>
               </div>
-              <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
           <div class="feedback__toggles slider">
@@ -166,110 +170,110 @@
         </section>
         <section class="pricing">
           <h2 class="visually-hidden">Наши тарифы</h2>
-          <svg class="pricing__triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="25px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
-            <polygon class="pricing__triangle-poly" fill="#000000" points="1200,0 0,0 0,94.074 "/>
+          <svg class="feedback__triangle triangle-spacer" width="320" height="25">
+            <use xlink:href="#bg-triangle-white"></use>
           </svg>
           <table class="pricing__table">
             <tr class="pricing__tariff">
               <th class="pricing__heading pricing__heading--empty">
               </th>
               <th class="pricing__heading">
-                <h3 class="pricing__title">База</h3>
+                <p class="pricing__title">База</p>
                 <p class="pricing__prise">1,99 USD</p>
               </th>
               <th class="pricing__heading pricing__heading--visible pricing__heading--hit">
-                <h3 class="pricing__title">Стандарт</h3>
+                <p class="pricing__title">Стандарт</p>
                 <p class="pricing__prise">3,99 USD</p>
-                <span class="pricing__hit-element">ХИТ</span>
+                <span class="pricing__hit-element"></span>
               </th>
               <th class="pricing__heading">
-                <h3 class="pricing__title">Анлим</h3>
+                <p class="pricing__title">Анлим</p>
                 <p class="pricing__prise">9,99 USD</p>
               </th>
             </tr>
             <tr class="pricing__includes-row">
-              <td class="pricing__pink-filter">
+              <td class="pricing__option">
                 <span class="pricing__includes-text">Розовый фильтр</span>
               </td>
               <td class="pricing__includes pricing__includes--checked">
                 <div class="pricing__cell-wrapper">
                   <span class="pricing__filter-on-mobile">Розовый фильтр</span>
-                  <svg class="pricing__includes-svg pricing__includes-svg--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.698px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32.698" height="21">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
               <td class="pricing__includes pricing__includes--visble pricing__includes--checked">
                 <div class="pricing__cell-wrapper">
                   <span class="pricing__filter-on-mobile">Розовый фильтр</span>
-                  <svg class="pricing__includes-svg pricing__includes-svg--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.698px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes"width="32.698" height="21">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
               <td class="pricing__includes pricing__includes--checked">
                 <div class="pricing__cell-wrapper">
                   <span class="pricing__filter-on-mobile">Розовый фильтр</span>
-                  <svg class="pricing__includes-svg pricing__includes-svg--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.698px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32.698" height="21">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
             </tr>
             <tr class="pricing__includes-row">
-              <td class="pricing__smiles">
+              <td class="pricing__option">
                 <span class="pricing__includes-text">Смайлики</span>
               </td>
               <td class="pricing__includes pricing__includes--checked">
                 <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
                   <span class="pricing__filter-on-mobile">Смайлики</span>
-                  <svg class="pricing__includes-svg pricing__includes-svg--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  <svg class="pricing__includes-svg pricing__includes-svg--no" width="26" height="26">
+                    <use xlink:href="#icon-no"></use>
                   </svg>
                 </div>
               </td>
               <td class="pricing__includes pricing__includes--visble pricing__includes--checked">
                 <div class="pricing__cell-wrapper">
                   <span class="pricing__filter-on-mobile">Смайлики</span>
-                  <svg class="pricing__includes-svg pricing__includes-svg--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32px" height="21px">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
               <td class="pricing__includes pricing__includes--checked">
                 <div class="pricing__cell-wrapper">
                   <span class="pricing__filter-on-mobile">Смайлики</span>
-                  <svg class="pricing__includes-svg pricing__includes-svg--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                    <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32px" height="21px">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
             </tr>
             <tr class="pricing__includes-row">
-              <td class="pricing__comments">
+              <td class="pricing__option">
                 <span class="pricing__includes-text">Комментарии</span>
               </td>
               <td class="pricing__includes pricing__includes--unchecked">
                 <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
                   <span class="pricing__filter-on-mobile">Комментарии</span>
-                  <svg class="pricing__includes-svg pricing__includes-svg--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  <svg class="pricing__includes-svg pricing__includes-svg--no" width="26" height="26">
+                    <use xlink:href="#icon-no"></use>
                   </svg>
                 </div>
               </td>
               <td class="pricing__includes pricing__includes--visble pricing__includes--unchecked">
                 <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
                   <span class="pricing__filter-on-mobile">Комментарии</span>
-                  <svg class="pricing__includes-svg pricing__includes-svg--no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  <svg class="pricing__includes-svg pricing__includes-svg--no" width="26px" height="26px">
+                    <use xlink:href="#icon-no"></use>
                   </svg>
                 </div>
               </td>
               <td class="pricing__includes pricing__includes--unchecked">
                 <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
                   <span class="pricing__filter-on-mobile">Комментарии</span>
-                  <svg class="pricing__includes-svg pricing__includes-svg--yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes"width="32" height="21">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                 </div>
               </td>
@@ -287,22 +291,25 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <h3 class="contacts__title">Звоните:</h3>
-              <p class="contacts_info">+7 (812) 555-66-66</p>
+              <p class="contacts__info contacts__info--tel">+7 (812) 555-66-66</p>
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Пишите:</h3>
-              <p class="contacts_info">mail@htmlacademy.ru</p>
+              <p class="contacts__info">mail@htmlacademy.ru</p>
             </li>
             <li class="contacts__item">
-              <h3 class="contacts__title">Приезжайте в гости</h3>
-              <p class="contacts_info">ул. Большая Конюшенная, 19/8</p>
+              <h3 class="contacts__title">Приезжайте в гости:</h3>
+              <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
             </li>
           </ul>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Наш офис на карте</h2>
-          <svg class="map__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="31px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
-            <polygon class="map__poly" fill="#000000" points="297.64,61.905 0,0 595.28,0 "/>
+          <!-- <svg class="map__svg" width="320" height="31">
+            <use xlink:href="#bg-triangle-white-footer"></use>
+          </svg> -->
+          <svg class="map__svg"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
+            <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
           </svg>
           <div class="map__pointer"></div>
         </section>
@@ -312,22 +319,22 @@
         <ul class="page-footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__twitter" href="#" aria-label="twitter">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="51px" height="51px" viewBox="22.5 69.048 253 253" enable-background="new 22.5 69.048 253 253" xml:space="preserve">
-                <path fill="#e9ebec" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+              <svg class="page-footer__social-svg" width="18" height="14" alt="Html Academy">
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__facebook" href="#" aria-label="facebook">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="51px" height="51px" viewBox="22.5 69.048 253 253" enable-background="new 22.5 69.048 253 253" xml:space="preserve">
-                <path fill="#e9ebec" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+              <svg class="page-footer__social-svg" width="9" height="18" alt="Html Academy">
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__youtube" href="#" aria-label="youtube">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="51px" height="51px" viewBox="22.5 69.048 253 253" enable-background="new 22.5 69.048 253 253" xml:space="preserve">
-                <path fill="#e9ebec" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+              <svg class="page-footer__social-svg" width="15" height="13" alt="Html Academy">
+                <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -335,7 +342,9 @@
         <div class="page-footer__maintained ">
           <a class="page-footer__maintained-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             <p class="page-footer__maintained-text">Разработано</p>
-            <img src="img/logo-htmlacademy.svg" class="page-footer__maintained-logo" alt="Html Academy" width="30" height="50">
+            <svg class="page-footer__maintained-logo" width="27" height="34" alt="Html Academy">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </footer>

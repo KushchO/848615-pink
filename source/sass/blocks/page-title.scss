@@ -1,10 +1,13 @@
 .page-title {
+  @include block-padding($mobile-block-padding);
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .page-title--index {
+  @include reset-margin-padding;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-position: 0 108px;
   padding-top: 394px;
@@ -15,14 +18,15 @@
   @include block-padding($mobile-block-padding);
   @include reset-margin-padding;
   @include big-light-text;
-  padding-top: 30px;
-  padding-bottom: 48px;
   color: #ffffff;
   text-align: center;
+  line-height: $line-h-big1;
 }
 
 .page-title__title--main {
   display: none;
+  padding-top: 30px;
+  padding-bottom: 48px;
 }
 
 @media (min-width: 660px) {
@@ -43,22 +47,24 @@
   }
 
   .page-title__title {
-    font-size: 40px;
+    padding-top: 41px;
+    padding-bottom: 29px;
+    line-height: $line-h-bigger;
+  }
+
+  .page-title__title {
+    font-size: 50px;
   }
 
   .page-title__wrapper {
     @include reset-margin-padding;
     width: 300px;
   }
-
-  .page-title__title {
-    font-size: 50px;
-  }
 }
 
 @media (min-width: 960px) {
   .page-title--index {
-    padding-top: 70px;
+    padding-top: 67px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 25px 95px;
 

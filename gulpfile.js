@@ -26,6 +26,7 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("server", function () {
@@ -65,7 +66,7 @@ gulp.task("webp", function () {
  });
 
 gulp.task("sprite", function () {
-  return gulp.src(["source/img/icon-*.svg", "source/img/bg-*.svg"])
+  return gulp.src(["source/img/icon-*.svg", "source/img/bg-*.svg", "source/img/logo-*.svg"])
  .pipe(svgstore({
   inlineSvg: true
  }))
