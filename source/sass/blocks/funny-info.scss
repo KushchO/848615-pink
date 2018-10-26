@@ -92,8 +92,8 @@
   }
 
   .funny-info__text {
+    @include heading($title-font, $font-regular, $line-h-big1);
     margin: 21px 0 31px;
-    @include heading ($title-font, $font-regular, $line-h-big1);
   }
 
   .funny-info__link {

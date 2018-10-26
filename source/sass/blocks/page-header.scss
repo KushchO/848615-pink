@@ -20,8 +20,8 @@
 }
 
 @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-    .page-header {
+(min-resolution: 1.5dppx) {
+  .page-header {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
@@ -107,17 +107,12 @@
   }
 }
 
+.page-header--no-js .page-header__burger-menu {
+  display: none;
+}
 
-
-
-.page-header--no-js {
-  .page-header__burger-menu {
-    display: none;
-  }
-
-  .page-header__navigation {
-    display: block;
-  }
+.page-header--no-js .page-header__navigation {
+  display: block;
 }
 
 @media (min-width: 660px) {
