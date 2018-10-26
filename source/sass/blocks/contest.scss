@@ -1,5 +1,5 @@
 .contest {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .contest__info {
@@ -35,7 +35,7 @@
   box-sizing: border-box;
   width: 100%;
   border: 2px solid #e5e5e5;
-  padding: 24px 22px 21px;
+  padding: 24px 22px 20px;
   margin-bottom: 12px;
 }
 
@@ -161,6 +161,11 @@ input:checked ~ .contest__label-check .contest__radio-box {
   }
 }
 
+.contest__end-of-form {
+  @include block-padding($mobile-block-padding);
+  width: 100%;
+}
+
 .contest_button {
   width: 280px;
   margin: 0 auto;
@@ -178,6 +183,10 @@ input:checked ~ .contest__label-check .contest__radio-box {
 
 .contest__highlighted {
   color: #d22856;
+}
+
+.contest__about-required--add {
+  display: none;
 }
 
 @media (min-width: 660px) {
@@ -225,35 +234,26 @@ input:checked ~ .contest__label-check .contest__radio-box {
     order: 1;
     margin-left: 20px;
     margin-top: 5px;
-    position: relative;
-
-    &::before {
-      @include before-after(60px, 60px);
-      top: -67px;
-      background-repeat: no-repeat;
-      background-color: #e5e5e5;
-    }
   }
 
-  .contest__label-input--order1 {
-    &::before {
-      @include before-after(60px, 60px);
-      background-image: url("../img/icon-phone.svg");
-      background-size: 20px 19px;
-      background-position: 18px 20px;
-      right: -342px;
-    }
+  .contest__input--phone {
+    background-image:
+    url("../img/icon-phone.svg"),
+    linear-gradient(to left, #e5e5e5, #e5e5e5);
+    background-position: 457px 20px, 437px 0;
+    background-size: 20px 21px, 60px 60px;
+    background-repeat: no-repeat;
   }
 
-  .contest__label-input--order2 {
-    &::before {
-      @include before-after(60px, 60px);
-      background-image: url("../img/icon-mail.svg");
-      background-size: 18px 13px;
-      background-position: 19px 23px;
-      right: -372px;
-    }
+  .contest__input--mail {
+    background-image:
+    url("../img/icon-mail.svg"),
+    linear-gradient(to left, #e5e5e5, #e5e5e5);
+    background-position: 457px 20px, 437px 0;
+    background-size: 18px 19px, 60px 60px;
+    background-repeat: no-repeat;
   }
+
 
   .contest__input {
     margin-bottom: 0;
@@ -324,6 +324,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
     background: transparent;
     border: 2px solid #e5e5e5;
     padding: 0 57px 6px;
+    margin-bottom: 55px;
 
     .contest__title {
       margin-bottom: 44px;
@@ -331,16 +332,37 @@ input:checked ~ .contest__label-check .contest__radio-box {
   }
 
   .contest__emotions {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     order: 4;
+    padding: 2px 57px 46px;
+
+    .contest__title {
+      padding: 0 35px;
+    }
   }
 
-  .contest_button {
+  .contest__story {
+    padding-bottom: 24px;
+  }
+
+  .contest__end-of-form {
     order: 5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 25px;
+    margin-bottom: 40px;
   }
 
   .contest__about-required {
-    order: 6;
+    @include flex-container;
+    margin: auto 0;
+    width: auto;
+  }
+
+  .contest_button {
+    margin: 0;
+    width: 300px;
   }
 
   .contest__title {
@@ -356,33 +378,131 @@ input:checked ~ .contest__label-check .contest__radio-box {
   }
 }
 
-
 @media (min-width: 960px) {
   .contest__form {
     @include block-padding($desktop-block-padding);
   }
 
+  .contest__info {
+    padding: 0 80px;
+    margin-bottom: 78px;
+  }
+
+  .contest__info--additional {
+    display: inline;
+    padding: 0;
+  }
+
   .contest__personal-info,
   .contest__app-type {
-    width: 45%;
+    width: 435px;
+  }
 
+  .contest__app-type {
+    padding-top: 49px;
+    padding-left: 73px;
+    margin-bottom: 59px;
+
+    .contest__title {
+      position: absolute;
+      top: -10px;
+      left: 26px;
+    }
+  }
+
+  .contest__list--apps {
+    padding-top: 6px;
+  }
+
+  .contest__personal-info {
+    padding-top: 7px;
+  }
+
+  .contest__item-input {
+    margin-bottom: 52px;
+  }
+
+  .contest__contacts {
+    margin-top: -5px;
+  }
+
+  .contest__title--contacts {
+    margin-bottom: 34px;
+  }
+
+  .contest__item-input--contacts {
+    margin-left: 0;
+    width: 375px;
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 9px;
+    }
+
+    .contest__input {
+      background-position: 332px 20px, 312px 0;
+    }
   }
 
   .contest__contacts .contest__list {
     @include flex-container;
-  }
-
-  .contest__contacts .contest__item-input {
-    width: 45%;
-    margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-basis: 200px;
   }
 
   .contest__archievements-list {
-    @include flex-container;
+    display: none;
   }
 
-  .contest_button,
+  .contest-desktop-acarchievements-wrapper {
+    @include flex-container;
+    flex-wrap: nowrap;
+    justify-content: space-between
+  }
+
+  .contest__archievements-list-dt {
+    @include reset-list;
+    width: 261px;
+
+    &--col2 {
+      margin-left: 53px;
+      width: 246px;
+    }
+
+    &--col3 {
+      margin-left: 53px;
+      width: 216px;
+    }
+  }
+
+  .contest__archievements {
+    padding-bottom: 11px;
+    padding-bottom: 13px;
+  }
+
+  .contest__emotions {
+    margin-bottom: 35px;
+
+    .contest__title {
+      margin-bottom: 32px;
+    }
+  }
+
+  .contest__story {
+    height: 127px;
+  }
+
+  .contest__about-required--add {
+    display: inline;
+  }
+
   .contest__about-required {
     width: auto;
+  }
+
+  .contest_button {
+    width: 300px;
   }
 }

@@ -1,5 +1,5 @@
 body {
   @include reset-margin-padding;
   font: $regular-font "Open Sans", "Arial", sans-serif;
-  color: #283645;
+  color: $dark-blue;
 }

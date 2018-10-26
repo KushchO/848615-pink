@@ -2,6 +2,7 @@
   @include block-padding($mobile-block-padding);
   background-repeat: no-repeat;
   width: 100%;
+  min-height: 170px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -30,6 +31,11 @@
 }
 
 @media (min-width: 660px) {
+  .page-title {
+    box-sizing: border-box;
+    min-height: 330px;
+  }
+
   .page-title--index {
     background-image:
       url("../img/iphone-hand-tablet@1x.png");
@@ -63,8 +69,22 @@
 }
 
 @media (min-width: 960px) {
+  .page-title {
+    padding: 17px 105px 71px;
+    min-height: 0;
+
+    &--gallery {
+      padding: 17px 160px 71px;
+    }
+  }
+
+
+
+
   .page-title--index {
     padding-top: 67px;
+    padding-left: 0;
+    padding-bottom: 0;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 25px 95px;
 
@@ -77,4 +97,5 @@
         line-height: 60px;
       }
   }
+
 }
