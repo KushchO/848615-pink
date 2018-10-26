@@ -95,23 +95,41 @@
   }
 
   .feedback__text {
-    position: relative;
     padding: 0 80px;
+    position: relative;
 
-    &::before {
-      @include before-after(22px, 41px);
-      background-image: url("../img/icon-review-arrow-left.svg");
-      top: 30px;
-      left: 0;
+    .feedback__arrow-left {
+      position: absolute;
+      top: 29px;
+      left: 0px;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
     }
 
-    &::after {
-      @include before-after(22px, 41px);
-      background-image: url("../img/icon-review-arrow-right.svg");
-      top: 30px;
+    .feedback__arrow-right {
+      position: absolute;
+      top:29px;
       right: 0;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
     }
   }
+
+
 
   .feedback__name {
     @include heading($large-font, $font-bold, $line-h-big1);

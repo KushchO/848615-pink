@@ -16,11 +16,9 @@
         <div class="page-header__first-line">
           <h1 class="visually-hidden">Приветствуем вас на главной странице приложения Pink</h1>
           <a class="page-header__logo" href="#" aria-label="Главная страница приложения Pink">
-            <picture>
-              <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg">
-            </picture>
+            <svg class="page-header__logo" width="75" height="22">
+                <use xlink:href="#logo-pink"></use>
+            </svg>
           </a>
           <button class="page-header__burger-menu  page-header__burger-menu--closed"></button>
         </div>
@@ -36,7 +34,7 @@
               </a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="form.html">
+            <a class="site-navigation__link site-navigation__link" href="form.html">
               Конкурс
             </a>
           </li>
@@ -48,7 +46,7 @@
         </ul>
       </div>
       <section class="page-title">
-          <h1 class="page-title__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h2 class="page-title__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
     </header>
     <main class="page-main">
@@ -62,11 +60,11 @@
             <ul class="contest__list">
               <li class="contest__item-input contest__item-input--inline">
                 <label for="contest-surname" class="contest__label-input">Фамилия:</label>
-                <input id="contest-surname" class="contest__input contest__input--required" type="text" placeholder="Укажите фамилию *" required>
+                <input id="contest-surname" class="contest__input" type="text" placeholder="Укажите фамилию *" required>
               </li>
               <li class="contest__item-input contest__item-input--inline">
                 <label for="contest-name" class="contest__label-input">Имя:</label>
-                <input id="contest-name" class="contest__input contest__input--required" type="text" placeholder="Введите ваше имя *" required>
+                <input id="contest-name" class="contest__input contest__input--error" type="text" placeholder="Введите ваше имя *" required>
               </li>
               <li class="contest__item-input contest__item-input--inline">
                 <label for="contest-patronymic" class="contest__label-input">Отчество:</label>
@@ -122,15 +120,15 @@
             <div class="contest-desktop-acarchievements-wrapper">
             <ul class="contest__archievements-list-dt  contest__archievements-list-dt--col1">
               <li class="contest__item-checkbox checked">
-                <input id="contest-shark" class="contest__checkbox" type="checkbox" checked>
-                <label class="contest__label-check" for="contest-shark">
+                <input id="contest-shark1" class="contest__checkbox" type="checkbox" checked>
+                <label class="contest__label-check" for="contest-shark1">
                   <span class="contest__checkbox-box"></span>
                   Сделал селфи с акулой
                 </label>
               </li>
               <li class="contest__item-checkbox checked">
-                <input id="contest-beach" class="contest__checkbox" type="checkbox" checked>
-                <label class="contest__label-check" for="contest-beach">
+                <input id="contest-beach1" class="contest__checkbox" type="checkbox" checked>
+                <label class="contest__label-check" for="contest-beach1">
                   <span class="contest__checkbox-box"></span>
                   Обгорел на пляже
                 </label>
@@ -138,15 +136,15 @@
             </ul>
             <ul class="contest__archievements-list-dt contest__archievements-list-dt--col2">
               <li class="contest__item-checkbox">
-                <input id="contest-norris" class="contest__checkbox" type="checkbox">
-                <label class="contest__label-check" for="contest-norris">
+                <input id="contest-norris1" class="contest__checkbox" type="checkbox">
+                <label class="contest__label-check" for="contest-norris1">
                   <span class="contest__checkbox-box"></span>
                   Видел Чака Норриса
                 </label>
               </li>
               <li class="contest__item-checkbox">
-                <input id="contest-souvenir" class="contest__checkbox" type="checkbox">
-                <label class="contest__label-check" for="contest-souvenir">
+                <input id="contest-souvenir1" class="contest__checkbox" type="checkbox">
+                <label class="contest__label-check" for="contest-souvenir1">
                   <span class="contest__checkbox-box"></span>
                   Накупил сувениров
                 </label>
@@ -154,15 +152,15 @@
             </ul>
             <ul class="contest__archievements-list-dt contest__archievements-list-dt--col3">
               <li class="contest__item-checkbox checked">
-                <input id="contest-tower" class="contest__checkbox" type="checkbox" checked>
-                <label class="contest__label-check" for="contest-tower">
+                <input id="contest-tower1" class="contest__checkbox" type="checkbox" checked>
+                <label class="contest__label-check" for="contest-tower1">
                   <span class="contest__checkbox-box"></span>
                   Удержал башню
                 </label>
               </li>
               <li class="contest__item-checkbox">
-                <input id="contest-hotel" class="contest__checkbox" type="checkbox">
-                <label class="contest__label-check" for="contest-hotel">
+                <input id="contest-hotel1" class="contest__checkbox" type="checkbox">
+                <label class="contest__label-check" for="contest-hotel1">
                   <span class="contest__checkbox-box"></span>
                   Разгромил отель
                 </label>
@@ -178,7 +176,7 @@
                   </li>
                   <li class="contest__item-input contest__item-input--contacts">
                     <label for="contest-email" class="contest__label-input contest__label-input--order2">Адрес почты</label>
-                    <input id="contest-email" class="contest__input contest__input--mail contest__input--required" type="text" placeholder="Введите почту *" required>
+                    <input id="contest-email" class="contest__input contest__input--mail" type="text" placeholder="Введите почту *" required>
                   </li>
                 </ul>
           </fieldset>
@@ -216,26 +214,28 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
-      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="Приложение Pink" width="150" height="100">
+    <footer class="page-footer page-footer--index">
+      <svg class="page-footer__logo" width="150" height="100">
+        <use xlink:href="#logo-pink-blue-mobile"></use>
+      </svg>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
           <a class="social-list__twitter" href="#" aria-label="twitter">
-            <svg class="page-footer__social-svg" width="18" height="14" alt="Html Academy">
+            <svg class="page-footer__social-svg" width="18" height="14">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__facebook" href="#" aria-label="facebook">
-            <svg class="page-footer__social-svg" width="9" height="18" alt="Html Academy">
+            <svg class="page-footer__social-svg" width="9" height="18">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__youtube" href="#" aria-label="youtube">
-            <svg class="page-footer__social-svg" width="15" height="13" alt="Html Academy">
+            <svg class="page-footer__social-svg" width="15" height="13">
               <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
@@ -244,7 +244,7 @@
       <div class="page-footer__maintained ">
         <a class="page-footer__maintained-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <p class="page-footer__maintained-text">Разработано</p>
-          <svg class="page-footer__maintained-logo" width="27" height="34" alt="Html Academy">
+          <svg class="page-footer__maintained-logo" width="27" height="34">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>

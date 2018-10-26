@@ -14,6 +14,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var svgmin = require("gulp-svgmin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -55,7 +56,6 @@ gulp.task("images", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
-
   .pipe(gulp.dest("source/img"));
 });
 
@@ -68,8 +68,15 @@ gulp.task("webp", function () {
 gulp.task("sprite", function () {
   return gulp.src(["source/img/icon-*.svg", "source/img/bg-*.svg", "source/img/logo-*.svg"])
  .pipe(svgstore({
-  inlineSvg: true
+  inlineSvg: true,
+
  }))
+ .pipe(svgmin({plugins: [{
+  removeAttrs: {attrs: 'id'}
+ }
+
+ ]}))
+
  .pipe(rename("sprite.svg"))
  .pipe(gulp.dest("build/img"));
 });

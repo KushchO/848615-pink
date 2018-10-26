@@ -64,6 +64,16 @@
 
   .download-block__button {
     margin-bottom: 45px;
+
+    &:hover {
+      background-color: #ffffff;
+      color: $red;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: rgba(210, 40, 86, 0.3);
+    }
   }
 
   .download-block__info {

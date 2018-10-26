@@ -7,6 +7,15 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
+  fill: $dark-blue;
+
+  &:hover {
+    fill: $red;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__maintained-link {
@@ -16,13 +25,22 @@
   color: #283645;
 }
 
-.page-footer__maintained {
-  margin-bottom: 40px;
-}
-
 .page-footer__maintained-logo {
   margin-left: 15px;
   margin-top: 10px;
+  fill: $red;
+}
+
+.page-footer__maintained-link:active .page-footer__maintained-logo{
+  opacity: 0.3;
+}
+
+.page-footer__maintained-link:hover .page-footer__maintained-logo{
+  fill: $dark-blue;
+}
+
+.page-footer__maintained {
+  margin-bottom: 40px;
 }
 
 .page-footer--index {

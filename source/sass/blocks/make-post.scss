@@ -53,11 +53,27 @@
 }
 
 .make-post__svg {
-  fill: $gray;
+  fill: $dark-blue;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .make-post__svg--active {
+  opacity: 1;
   fill: $red;
+
+  &:hover {
+    opacity: 1;;
+  }
+}
+
+.make-post__item-crop--active {
+  .make-post__range::after {
+    background-color: $red;
+  }
 }
 
 .make-post__range-wrapper {

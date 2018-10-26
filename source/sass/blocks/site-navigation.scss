@@ -17,7 +17,17 @@
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
   padding: 19px 0;
+
+  &:hover {
+    color: $red;
+  }
+
+  &:active {
+    color: $red;
+    opacity: 0.3;
+  }
 }
+
 
 .site-navigation--closed {
   display: none;
@@ -43,5 +53,14 @@
     font-weight: 400;
     text-transform: none;
     border: none;
+
+    &:active {
+      color: #ffffff;
+    }
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 10px;
+    }
   }
 }

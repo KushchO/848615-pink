@@ -31,12 +31,28 @@
   @include reset-list;
 }
 
+.contest__archievements-list-dt {
+  display: none;
+}
+
 .contest__input {
   box-sizing: border-box;
   width: 100%;
   border: 2px solid #e5e5e5;
   padding: 24px 22px 20px;
   margin-bottom: 12px;
+  outline: none;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:required {
+    &--error {
+    }
+  }
+
+
 }
 
 .contest__label-input {
@@ -112,6 +128,17 @@
   @include radio-check;
   border-radius: 50%;
 
+}
+
+.contest__checkbox-box,
+.contest__radio-box {
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    border-color: $red;
+  }
 }
 
 .contest__item-radio {

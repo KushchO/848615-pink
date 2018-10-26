@@ -7,15 +7,37 @@
   color: #ffffff;
   text-align: center;
   padding: 14px 15px 13px;
+  outline: none;
 }
 
 .button--active {
   color: $red;
   border-color: $red;
+
+  &:hover {
+    background-color: $red;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: $red;
+    color: rgba($color: #ffffff, $alpha: 0.3)
+  }
 }
 
-.button--disabled {
+.button--cancel {
   background: transparent;
-  border-color: #dddfe0;
-  color: #e3e4e4;
+  border-color: $dark-blue;
+  color: $dark-blue;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+    background: $dark-blue;
+  }
 }
