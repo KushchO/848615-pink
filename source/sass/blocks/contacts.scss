@@ -14,6 +14,7 @@
 .contacts__list {
   @include reset-list;
 }
+
 .contacts__title {
   @include titles;
   @include reset-margin-padding;
@@ -37,7 +38,7 @@
   }
 
   .map__svg {
-    fill: #fff;
+    fill: #ffffff;
   }
 }
 
@@ -45,6 +46,7 @@
   .contacts {
     margin-bottom: -20px;
   }
+
   .contacts__question {
     padding: 0 30px;
     margin-bottom: 42px;
@@ -62,11 +64,10 @@
     width: 230px;
     margin-bottom: 26px;
   }
-
 }
 
 @media (min-width: 960px) {
-  .contacts__question  {
+  .contacts__question {
     padding: 0 100px;
     margin-top: 46px;
     margin-bottom: 56px;
@@ -85,7 +86,7 @@
   }
 
   .contacts__item:nth-child(2) {
-    order: 2
+    order: 2;
   }
 
   .contacts__title {

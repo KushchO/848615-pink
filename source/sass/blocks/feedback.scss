@@ -27,7 +27,6 @@
 .feedback__name {
   @include reset-margin-padding;
   @include titles;
-
 }
 
 .feedback__item {
@@ -66,6 +65,7 @@
     display: block;
     margin-top: 10px;
   }
+
   .feedback__text {
     @include reset-margin-padding;
     @include heading($title-font, $font-regular, $line-h-big1);
@@ -101,7 +101,7 @@
     .feedback__arrow-left {
       position: absolute;
       top: 29px;
-      left: 0px;
+      left: 0;
       opacity: 0.3;
 
       &:hover {
@@ -115,7 +115,7 @@
 
     .feedback__arrow-right {
       position: absolute;
-      top:29px;
+      top: 29px;
       right: 0;
       opacity: 0.3;
 
@@ -129,8 +129,6 @@
     }
   }
 
-
-
   .feedback__name {
     @include heading($large-font, $font-bold, $line-h-big1);
   }
@@ -143,5 +141,4 @@
   .feedback__toggles {
     display: none;
   }
-
 }

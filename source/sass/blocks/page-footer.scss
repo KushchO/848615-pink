@@ -31,11 +31,11 @@
   fill: $red;
 }
 
-.page-footer__maintained-link:active .page-footer__maintained-logo{
+.page-footer__maintained-link:active .page-footer__maintained-logo {
   opacity: 0.3;
 }
 
-.page-footer__maintained-link:hover .page-footer__maintained-logo{
+.page-footer__maintained-link:hover .page-footer__maintained-logo {
   fill: $dark-blue;
 }
 
@@ -65,6 +65,8 @@
 
   .page-footer__logo {
     margin: 0;
+    width: 147px;
+    height: 40px;
   }
 
   .page-footer__maintained {
@@ -86,11 +88,6 @@
     margin: auto 0;
     fill: #d22856;
     margin-top: 12px;
-  }
-
-  .page-footer__logo {
-    width: 147px;
-    height: 40px;
   }
 
   .social-list__item:not(:last-child) {

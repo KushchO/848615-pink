@@ -57,7 +57,7 @@
   background-image: url("../img/bg-hit.svg");
   color: #ffffff;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -2px;
   width: 74px;
   height: 73px;
@@ -81,7 +81,7 @@
   height: 28px;
 }
 
-.pricing__cell-wrapper{
+.pricing__cell-wrapper {
   @include flex-container;
   justify-content: space-between;
   box-sizing: border-box;
@@ -140,7 +140,7 @@
   }
 
   .pricing__heading:not(:last-child):not(:first-child) {
-    border-right: 2px solid #fff;
+    border-right: 2px solid #ffffff;
   }
 
   .pricing__hit-element {
@@ -150,7 +150,7 @@
   }
 
   .pricing__heading--hit {
-    background-position: 0px -12px;
+    background-position: 0 -12px;
   }
 
   .pricing__heading--empty {
@@ -183,6 +183,7 @@
   .pricing__title {
     font-size: 16px;
   }
+
   .pricing__prise {
     font-size: 18px;
     line-height: $line-h-big1;
@@ -197,7 +198,6 @@
   .pricing__includes-text {
     line-height: $line-h-big1;
   }
-
 }
 
 @media (min-width: 960px) {
@@ -216,6 +216,7 @@
     font-size: 18px;
     line-height: $line-h-big1;
   }
+
   .pricing__prise {
     font-size: 24px;
     line-height: $line-h-big1;
@@ -243,13 +244,12 @@
     }
   }
 
-  .pricing__hit-element{
+  .pricing__hit-element {
     top: 0;
     left: 0;
   }
 
   .pricing__heading--hit {
-    background-position: 0px -1px;
+    background-position: 0 -1px;
   }
-
 }

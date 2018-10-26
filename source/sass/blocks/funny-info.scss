@@ -7,7 +7,7 @@
 }
 
 .funny-info__br-tab {
-  display: none;;
+  display: none;
 }
 
 @media (min-width: 660px) {
@@ -30,7 +30,7 @@
       left: 22px;
     }
 
-    &::after{
+    &::after {
       position: absolute;
       content: "24";
       font-size: 96px;
@@ -58,8 +58,8 @@
   }
 
   .funny-info__text {
-    line-height: $line-h-big;
     @include reset-margin-padding;
+    line-height: $line-h-big;
     margin: 12px 0;
     padding-right: 10px;
   }
@@ -93,7 +93,7 @@
 
   .funny-info__text {
     margin: 21px 0 31px;
-    @include heading($title-font, $font-regular, $line-h-big1);
+    @include heading ($title-font, $font-regular, $line-h-big1);
   }
 
   .funny-info__link {
@@ -102,7 +102,7 @@
   }
 
   .funny-info__br {
-    display: inline;;
+    display: inline;
   }
 
   .funny-info__clock {
@@ -118,7 +118,7 @@
       border-width: 16px;
     }
 
-    &::after{
+    &::after {
       font-size: 120px;
       top: 107px;
       left: 81px;

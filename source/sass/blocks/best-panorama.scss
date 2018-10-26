@@ -47,18 +47,14 @@
 
     .gallery__likes::before {
       margin-left: 17px;
+      margin-right: 17px;
+      margin-top: 0;
     }
 
     .gallery__message {
       order: 2;
       margin-bottom: 9px;
     }
-
-    .gallery__likes::before {
-      margin-right: 17px;
-      margin-top: 0;
-    }
-
   }
 
   .best-panorama__mark{
@@ -82,7 +78,7 @@
     height: 506px;
   }
 
-  .best-panorama__mark{
+  .best-panorama__mark {
     line-height: 12px;
   }
 

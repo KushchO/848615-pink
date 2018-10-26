@@ -61,6 +61,7 @@
   .gallery {
     margin-bottom: 25px;
   }
+
   .gallery_invitation {
     font-size: $title-font;
     line-height: $line-h-big1;
@@ -71,7 +72,7 @@
     @include flex-container;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow:1;
+    flex-grow: 1;
     line-height: 18px;
     padding-top: 25px;
     padding-left: 27px;

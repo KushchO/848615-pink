@@ -37,8 +37,7 @@
   }
 
   .page-title--index {
-    background-image:
-      url("../img/iphone-hand-tablet@1x.png");
+    background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: -20px 75px;
     padding-top: 60px;
 
@@ -56,9 +55,6 @@
     padding-top: 41px;
     padding-bottom: 29px;
     line-height: $line-h-bigger;
-  }
-
-  .page-title__title {
     font-size: 50px;
   }
 
@@ -78,9 +74,6 @@
     }
   }
 
-
-
-
   .page-title--index {
     padding-top: 67px;
     padding-left: 0;
@@ -88,14 +81,13 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 25px 95px;
 
-      .page-title__title {
-        @include biggest-light-text;
-        margin-left: 40px;
-        width: 235px;
-        padding-top: 35px;
-        margin-bottom: 53px;
-        line-height: 60px;
-      }
+    .page-title__title {
+      @include biggest-light-text;
+      margin-left: 40px;
+      width: 235px;
+      padding-top: 35px;
+      margin-bottom: 53px;
+      line-height: 60px;
+    }
   }
-
 }

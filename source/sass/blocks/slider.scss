@@ -3,13 +3,12 @@
   width: 6px;
   height: 6px;
   background: $dark-blue;
-    opacity: 0.3;
+  opacity: 0.3;
   border-radius: 50%;
   border: none;
 
-  &:not(:first-child){
+  &:not(:first-child) {
     margin-left: 15px;
-
   }
 
   &--active {
