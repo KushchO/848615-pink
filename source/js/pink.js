@@ -23,4 +23,3 @@ burgerToggle.addEventListener('click', function() {
     pageHeader.classList.remove('page-header--open-menu');
   }
 });
-
