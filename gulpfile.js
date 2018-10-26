@@ -71,11 +71,6 @@ gulp.task("sprite", function () {
       inlineSvg: true,
 
     }))
-    .pipe(svgmin({plugins: [{
-      removeAttrs: {attrs: 'id'}
-    }
-
-  ]}))
 
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
