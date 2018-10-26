@@ -7,5 +7,5 @@ notifications:
   email: false
 
 ignore:
-  - source/img/sprite.svg
-  - source/sass/normolize.scss
+  - *.svg
+
