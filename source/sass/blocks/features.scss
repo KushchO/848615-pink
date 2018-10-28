@@ -1,6 +1,6 @@
 .features {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 13px;
 }
 
 .features__white-wrapper {
@@ -109,13 +109,15 @@
   .features__list {
     @include flex-container;
     @include block-padding($desktop-block-padding);
+    @include centered($desktop-width);
     margin-top: -94px;
     justify-content: space-between;
     background-image: none;
-    padding-left: 0;
+    padding-left: 10px;
   }
 
   .features__white-wrapper {
+    @include centered($desktop-width);
     @include block-padding($desktop-block-padding);
     margin: 18px 0 88px;
   }

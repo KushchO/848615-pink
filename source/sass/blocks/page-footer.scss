@@ -103,7 +103,12 @@
 @media (min-width: 960px) {
   .page-footer {
     @include block-padding($desktop-block-padding);
-    padding-top: 20px;
+    @include centered($desktop-width);
+    padding-top: 18px;
+  }
+
+  .page-footer--index {
+    padding-top: 70px;
   }
 
   .page-footer__maintained-text {

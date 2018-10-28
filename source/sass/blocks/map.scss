@@ -8,8 +8,8 @@
 
 .map__svg {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -31px;
+  left: -138px;
   fill: #ffffff;
 }
 
@@ -51,6 +51,8 @@
     margin-left: 10px;
     width: 1200px;
     height: 123px;
+    top: -58px;
+    left: -280px;
   }
 }
 
@@ -58,7 +60,7 @@
   .map {
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-position: -120px -295px;
-    height: 486px;
+    height: 483px;
   }
 
   .map__svg {

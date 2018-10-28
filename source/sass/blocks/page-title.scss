@@ -10,8 +10,8 @@
 .page-title--index {
   @include reset-margin-padding;
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: 0 108px;
-  padding-top: 394px;
+  background-position: 0 91px;
+  padding-top: 377px;
   padding-bottom: 0;
 }
 
@@ -38,8 +38,8 @@
 
   .page-title--index {
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -20px 75px;
-    padding-top: 60px;
+    background-position: -20px 54px;
+    padding-top: 32px;
 
     .page-title__title {
       display: block;
@@ -47,12 +47,12 @@
       font-size: 40px;
       margin-left: 55px;
       padding-bottom: 0;
-      line-height: 50px;
+      line-height: 48px;
     }
   }
 
   .page-title__title {
-    padding-top: 41px;
+    padding-top: 47px;
     padding-bottom: 29px;
     line-height: $line-h-bigger;
     font-size: 50px;
@@ -66,6 +66,7 @@
 
 @media (min-width: 960px) {
   .page-title {
+    @include centered($desktop-width);
     padding: 17px 105px 71px;
     min-height: 0;
 
@@ -75,11 +76,11 @@
   }
 
   .page-title--index {
-    padding-top: 67px;
+    padding-top: 55px;
     padding-left: 0;
     padding-bottom: 0;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 25px 95px;
+    background-position: 25px 80px;
 
     .page-title__title {
       @include biggest-light-text;

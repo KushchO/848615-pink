@@ -16,6 +16,14 @@
   margin-bottom: 20px;
 }
 
+.feedback__arrow-left,
+.feedback__arrow-right {
+  display: none;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
 .feedback__list {
   @include reset-list;
 }
@@ -99,8 +107,9 @@
     position: relative;
 
     .feedback__arrow-left {
+      display: block;
       position: absolute;
-      top: 29px;
+      top: 15px;
       left: 0;
       opacity: 0.3;
 
@@ -114,8 +123,9 @@
     }
 
     .feedback__arrow-right {
+      display: block;
       position: absolute;
-      top: 29px;
+      top: 15px;
       right: 0;
       opacity: 0.3;
 

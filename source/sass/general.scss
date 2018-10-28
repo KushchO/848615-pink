@@ -3,3 +3,13 @@ body {
   font: $regular-font "Open Sans", "Arial", sans-serif;
   color: $dark-blue;
 }
+
+.page-main {
+  overflow: hidden;
+}
+
+@media (min-width: 960px) {
+  .page-main {
+    @include centered($desktop-width);
+  }
+}
