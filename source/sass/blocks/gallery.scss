@@ -74,7 +74,7 @@
     flex-direction: column;
     flex-grow: 1;
     line-height: 18px;
-    padding-top: 25px;
+    padding-top: 22px;
     padding-left: 27px;
     min-height: 129px;
     box-sizing: border-box;
@@ -108,7 +108,7 @@
     @include flex-container;
     flex-direction: column;
     width: 300px;
-    padding-bottom: 26px;
+    padding-bottom: 22px;
   }
 
   .gallery__img {
@@ -129,7 +129,7 @@
   }
 
   .gallery_invitation {
-    padding: 91px 160px 88px;
+    padding: 93px 160px 88px;
   }
 
   .gallery__list {

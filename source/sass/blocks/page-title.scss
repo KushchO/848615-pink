@@ -34,6 +34,7 @@
   .page-title {
     box-sizing: border-box;
     min-height: 330px;
+    padding-top: 22px;
   }
 
   .page-title--index {
@@ -49,6 +50,10 @@
       padding-bottom: 0;
       line-height: 48px;
     }
+
+    .page-title__title--main {
+      margin-left: 53px;
+    }
   }
 
   .page-title__title {
@@ -56,6 +61,10 @@
     padding-bottom: 29px;
     line-height: $line-h-bigger;
     font-size: 50px;
+  }
+
+  .page-title__title--main {
+    padding-top: 42px;
   }
 
   .page-title__wrapper {
@@ -76,15 +85,15 @@
   }
 
   .page-title--index {
-    padding-top: 55px;
+    padding-top: 74px;
     padding-left: 0;
     padding-bottom: 0;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 25px 80px;
+    background-position: 23px 98px;
 
     .page-title__title {
       @include biggest-light-text;
-      margin-left: 40px;
+      margin-left: 37px;
       width: 235px;
       padding-top: 35px;
       margin-bottom: 53px;

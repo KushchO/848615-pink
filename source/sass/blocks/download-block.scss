@@ -50,7 +50,7 @@
     width: 300px;
     margin-left: 20px;
     margin-top: 27px;
-    margin-bottom: 110px;
+    margin-bottom: 108px;
   }
 
   .download-block__list {
@@ -85,7 +85,7 @@
 @media (min-width: 960px) {
   .download-block {
     margin-bottom: 123px;
-    margin-left: 10px;
+    margin-left: 6px;
   }
 
   .download-block__button {
@@ -93,6 +93,7 @@
     font-weight: bold;
     padding: 10px 15px;
     margin-bottom: 65px;
+    margin-top: -3px;
   }
 
   .download-block__list {

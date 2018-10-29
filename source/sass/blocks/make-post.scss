@@ -35,6 +35,7 @@
   background-color: #f2f2f2;
   padding-top: 20px;
   margin-top: 42px;
+  padding-bottom: 40px;
 }
 
 .make-post__item--contrast {
@@ -289,7 +290,7 @@
   .make-post {
     @include block-padding($desktop-block-padding);
     padding-top: 0;
-    margin-bottom: 82px;
+    margin-bottom: 81px;
   }
 
   .make-post__interactive-wrapper {
@@ -314,7 +315,7 @@
   }
 
   .make-post__tool-wrapper {
-    padding: 57px 50px 53px 79px;
+    padding: 57px 50px 58px 79px;
     margin-top: 65px;
   }
 
