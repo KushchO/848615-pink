@@ -31,6 +31,10 @@
   fill: $red;
 }
 
+.page-footer__logo--desktop {
+  display: none;
+}
+
 .page-footer__maintained-link:active .page-footer__maintained-logo {
   opacity: 0.3;
 }
@@ -123,5 +127,13 @@
 
   .page-footer__maintained-logo {
     margin-top: 13px;
+  }
+
+  .page-footer__logo--mob-tab {
+    display: none;
+  }
+
+  .page-footer__logo--desktop{
+    display: block;
   }
 }

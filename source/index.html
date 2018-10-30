@@ -101,48 +101,52 @@
           <div class="features__traingle"></div>
         </div>
         <div class="features__beige-wrapper">
-          <svg class="features__triangle triangle-spacer" width="320" height="25">
+          <svg class="features__triangle triangle-spacer" width="320" height="25" preserveAspectRatio="none">
               <use xlink:href="#bg-triangle-white"></use>
           </svg>
-          <ul class="features__list">
-            <li class="features__item features__item--1">
-              <img class="features__img" src="img/iphone-screen-1-desktop@1x.png" alt="Pink на вашем экране" width="292" height="300">
-              <h3 class="features__title">Поднимает настроение</h3>
-              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="features__item features__item--2">
-              <img class="features__img" src="img/iphone-screen-2-desktop@1x.png" alt="Pink на вашем экране" width="292" height="300">
-              <h3 class="features__title">Меняет мир вокруг</h3>
-              <p class="features__text">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="features__br1"> усилить эффект
-              </p>
-            </li>
-            <li class="features__item features__item--last features__item--3">
-              <img class="features__img" src="img/iphone-screen-3-desktop@1x.png" alt="Pink на вашем экране" width="292" height="300">
-              <h3 class="features__title">Заводит новых друзей</h3>
-              <p class="features__text">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-            </li>
-          </ul>
-          <img class="features__img-on-tab" src="img/iphone-screen-3-tablet@1x.png" width="268" height="547" alt="Приложение на телефоне">
+          <div class="features__beige-wrapper-content">
+            <ul class="features__list">
+              <li class="features__item features__item--1">
+                <img class="features__img" src="img/iphone-screen-1-desktop@1x.png" alt="Pink на вашем экране" width="292" height="300">
+                <h3 class="features__title">Поднимает настроение</h3>
+                <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="features__item features__item--2">
+                <img class="features__img" src="img/iphone-screen-2-desktop@1x.png" alt="Pink на вашем экране" width="292" height="300">
+                <h3 class="features__title">Меняет мир вокруг</h3>
+                <p class="features__text">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="features__br1"> усилить эффект
+                </p>
+              </li>
+              <li class="features__item features__item--last features__item--3">
+                <img class="features__img" src="img/iphone-screen-3-desktop@1x.png" alt="Pink на вашем экране" width="292" height="300">
+                <h3 class="features__title">Заводит новых друзей</h3>
+                <p class="features__text">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </li>
+            </ul>
+            <img class="features__img-on-tab" src="img/iphone-screen-3-tablet@1x.png" width="268" height="547" alt="Приложение на телефоне">
+          </div>
         </div>
       </section>
       <section class="funny-info">
-        <div class="funny-info__picture-wrapper" >
-          <svg class="funny-info__clock" width="238" height="267">
-            <use class="funny-info__clock-container" xlink:href="#icon-timer"></use>
-          </svg>
-        </div>
-        <div class="funny-info__text-wrapper">
-          <h3 class="funny-info__title">Эффект</h3>
-          <h3 class="funny-info__title"> на 24 часа!</h3>
-          <p class="funny-info__text">Британские ученые провели исследования
-              и доказали,<br class="funny-info__br"> что положительный эффект<br class="funny-info__br-tab">
-              от использования приложения длится
-              целые сутки!
-          </p>
-          <a class="funny-info__link" href="#">Узнать больше об исследовании</a>
+        <div class="funny-info__bg-wrapper">
+          <div class="funny-info__picture-wrapper" >
+            <svg class="funny-info__clock" width="238" height="267">
+              <use class="funny-info__clock-container" xlink:href="#icon-timer"></use>
+            </svg>
+          </div>
+          <div class="funny-info__text-wrapper">
+            <h3 class="funny-info__title">Эффект</h3>
+            <h3 class="funny-info__title"> на 24 часа!</h3>
+            <p class="funny-info__text">Британские ученые провели исследования
+                и доказали,<br class="funny-info__br"> что положительный эффект<br class="funny-info__br-tab">
+                от использования приложения длится
+                целые сутки!
+            </p>
+            <a class="funny-info__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="feedback centered">
@@ -182,117 +186,119 @@
         <svg class="feedback__triangle triangle-spacer" width="320" height="25">
           <use xlink:href="#bg-triangle-white"></use>
         </svg>
-        <table class="pricing__table">
-          <tr class="pricing__tariff">
-            <th class="pricing__heading pricing__heading--empty">
-            </th>
-            <th class="pricing__heading">
-              <p class="pricing__title">База</p>
-              <p class="pricing__prise">1,99 USD</p>
-            </th>
-            <th class="pricing__heading pricing__heading--visible pricing__heading--hit">
-              <p class="pricing__title">Стандарт</p>
-              <p class="pricing__prise">3,99 USD</p>
-              <span class="pricing__hit-element"></span>
-            </th>
-            <th class="pricing__heading">
-              <p class="pricing__title">Анлим</p>
-              <p class="pricing__prise">9,99 USD</p>
-            </th>
-          </tr>
-          <tr class="pricing__includes-row">
-            <td class="pricing__option">
-              <span class="pricing__includes-text">Розовый фильтр</span>
-            </td>
-            <td class="pricing__includes pricing__includes--checked">
-              <div class="pricing__cell-wrapper">
-                <span class="pricing__filter-on-mobile">Розовый фильтр</span>
-                <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32.698" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </div>
-            </td>
-            <td class="pricing__includes pricing__includes--visble pricing__includes--checked">
-              <div class="pricing__cell-wrapper">
-                <span class="pricing__filter-on-mobile">Розовый фильтр</span>
-                <svg class="pricing__includes-svg pricing__includes-svg--yes"width="32.698" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </div>
-            </td>
-            <td class="pricing__includes pricing__includes--checked">
-              <div class="pricing__cell-wrapper">
-                <span class="pricing__filter-on-mobile">Розовый фильтр</span>
-                <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32.698" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </div>
-            </td>
-          </tr>
-          <tr class="pricing__includes-row">
-            <td class="pricing__option">
-              <span class="pricing__includes-text">Смайлики</span>
-            </td>
-            <td class="pricing__includes pricing__includes--checked">
-              <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
-                <span class="pricing__filter-on-mobile">Смайлики</span>
-                <svg class="pricing__includes-svg pricing__includes-svg--no" width="26" height="26">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </div>
-            </td>
-            <td class="pricing__includes pricing__includes--visble pricing__includes--checked">
-              <div class="pricing__cell-wrapper">
-                <span class="pricing__filter-on-mobile">Смайлики</span>
-                <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32px" height="21px">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </div>
-            </td>
-            <td class="pricing__includes pricing__includes--checked">
-              <div class="pricing__cell-wrapper">
-                <span class="pricing__filter-on-mobile">Смайлики</span>
-                <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32px" height="21px">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </div>
-            </td>
-          </tr>
-          <tr class="pricing__includes-row">
-            <td class="pricing__option">
-              <span class="pricing__includes-text">Комментарии</span>
-            </td>
-            <td class="pricing__includes pricing__includes--unchecked">
-              <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
-                <span class="pricing__filter-on-mobile">Комментарии</span>
-                <svg class="pricing__includes-svg pricing__includes-svg--no" width="26" height="26">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </div>
-            </td>
-            <td class="pricing__includes pricing__includes--visble pricing__includes--unchecked">
-              <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
-                <span class="pricing__filter-on-mobile">Комментарии</span>
-                <svg class="pricing__includes-svg pricing__includes-svg--no" width="26px" height="26px">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </div>
-            </td>
-            <td class="pricing__includes pricing__includes--unchecked">
-              <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
-                <span class="pricing__filter-on-mobile">Комментарии</span>
-                <svg class="pricing__includes-svg pricing__includes-svg--yes"width="32" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <div class="pricing__toggles slider">
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle slider__toggle--active" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-          </div>
+        <div class="pricing__wrapper">
+          <table class="pricing__table">
+            <tr class="pricing__tariff">
+              <th class="pricing__heading pricing__heading--empty">
+              </th>
+              <th class="pricing__heading">
+                <p class="pricing__title">База</p>
+                <p class="pricing__prise">1,99 USD</p>
+              </th>
+              <th class="pricing__heading pricing__heading--visible pricing__heading--hit">
+                <p class="pricing__title">Стандарт</p>
+                <p class="pricing__prise">3,99 USD</p>
+                <span class="pricing__hit-element"></span>
+              </th>
+              <th class="pricing__heading">
+                <p class="pricing__title">Анлим</p>
+                <p class="pricing__prise">9,99 USD</p>
+              </th>
+            </tr>
+            <tr class="pricing__includes-row">
+              <td class="pricing__option">
+                <span class="pricing__includes-text">Розовый фильтр</span>
+              </td>
+              <td class="pricing__includes pricing__includes--checked">
+                <div class="pricing__cell-wrapper">
+                  <span class="pricing__filter-on-mobile">Розовый фильтр</span>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32.698" height="21">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </div>
+              </td>
+              <td class="pricing__includes pricing__includes--visble pricing__includes--checked">
+                <div class="pricing__cell-wrapper">
+                  <span class="pricing__filter-on-mobile">Розовый фильтр</span>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes"width="32.698" height="21">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </div>
+              </td>
+              <td class="pricing__includes pricing__includes--checked">
+                <div class="pricing__cell-wrapper">
+                  <span class="pricing__filter-on-mobile">Розовый фильтр</span>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32.698" height="21">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="pricing__includes-row">
+              <td class="pricing__option">
+                <span class="pricing__includes-text">Смайлики</span>
+              </td>
+              <td class="pricing__includes pricing__includes--checked">
+                <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
+                  <span class="pricing__filter-on-mobile">Смайлики</span>
+                  <svg class="pricing__includes-svg pricing__includes-svg--no" width="26" height="26">
+                    <use xlink:href="#icon-no"></use>
+                  </svg>
+                </div>
+              </td>
+              <td class="pricing__includes pricing__includes--visble pricing__includes--checked">
+                <div class="pricing__cell-wrapper">
+                  <span class="pricing__filter-on-mobile">Смайлики</span>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32px" height="21px">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </div>
+              </td>
+              <td class="pricing__includes pricing__includes--checked">
+                <div class="pricing__cell-wrapper">
+                  <span class="pricing__filter-on-mobile">Смайлики</span>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes" width="32px" height="21px">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="pricing__includes-row">
+              <td class="pricing__option">
+                <span class="pricing__includes-text">Комментарии</span>
+              </td>
+              <td class="pricing__includes pricing__includes--unchecked">
+                <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
+                  <span class="pricing__filter-on-mobile">Комментарии</span>
+                  <svg class="pricing__includes-svg pricing__includes-svg--no" width="26" height="26">
+                    <use xlink:href="#icon-no"></use>
+                  </svg>
+                </div>
+              </td>
+              <td class="pricing__includes pricing__includes--visble pricing__includes--unchecked">
+                <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
+                  <span class="pricing__filter-on-mobile">Комментарии</span>
+                  <svg class="pricing__includes-svg pricing__includes-svg--no" width="26px" height="26px">
+                    <use xlink:href="#icon-no"></use>
+                  </svg>
+                </div>
+              </td>
+              <td class="pricing__includes pricing__includes--unchecked">
+                <div class="pricing__cell-wrapper pricing__cell-wrapper--no">
+                  <span class="pricing__filter-on-mobile">Комментарии</span>
+                  <svg class="pricing__includes-svg pricing__includes-svg--yes"width="32" height="21">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="pricing__toggles slider">
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle slider__toggle--active" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+            </div>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация сервиса Pink</h2>
@@ -314,10 +320,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наш офис на карте</h2>
-        <!-- <svg class="map__svg" width="320" height="31">
-          <use xlink:href="#bg-triangle-white-footer"></use>
-        </svg> -->
-        <svg class="map__svg"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905">
+        <svg class="map__svg"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" preserveAspectRatio="none">
           <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
         </svg>
         <div class="map__pointer"></div>
@@ -325,7 +328,7 @@
     </main>
     <footer class="page-footer page-footer--index">
       <svg class="page-footer__logo" width="150" height="100">
-        <use xlink:href="#logo-pink-blue-mobile"></use>
+        <use xlink:href="#logo-pink-foot"></use>
       </svg>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">

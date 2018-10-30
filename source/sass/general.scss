@@ -4,12 +4,4 @@ body {
   color: $dark-blue;
 }
 
-.page-main {
-  overflow: hidden;
-}
 
-@media (min-width: 960px) {
-  .page-main {
-    @include centered($desktop-width);
-  }
-}

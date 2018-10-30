@@ -1,4 +1,5 @@
 .contest {
+  @include centered($mobile-width);
   margin-bottom: 10px;
   padding-bottom: 12px;
 }
@@ -207,6 +208,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
 
 @media (min-width: 660px) {
   .contest {
+    @include centered($tablet-width);
     padding-top: 92px;
   }
 
@@ -395,6 +397,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
 
 @media (min-width: 960px) {
   .contest {
+    @include centered($desktop-width);
     margin-bottom: 0;
   }
 

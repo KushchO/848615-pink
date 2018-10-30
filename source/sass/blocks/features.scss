@@ -5,14 +5,24 @@
 
 .features__white-wrapper {
   @include block-padding($mobile-block-padding);
+  @include centered($mobile-width);
   background: #ffffff;
   margin-bottom: 35px;
 }
 
 .features__beige-wrapper {
-  @include block-padding($mobile-block-padding);
   background-color: #f2f2f2;
   position: relative;
+  width: 100vw;
+}
+
+.features__triangle {
+  width: 100vw;
+}
+
+.features__beige-wrapper-content {
+  @include block-padding($mobile-block-padding);
+  @include centered($mobile-width);
 }
 
 .features__list {
@@ -70,11 +80,17 @@
   }
 
   .features__white-wrapper {
+    @include centered($tablet-width);
     margin-bottom: 45px;
   }
 
   .features__beige-wrapper {
     padding-bottom: 10px;
+  }
+
+  .features__beige-wrapper-content {
+    @include centered($tablet-width);
+    position: relative;
   }
 
   .features__list {
@@ -91,7 +107,7 @@
   .features__img-on-tab {
     display: block;
     position: absolute;
-    top: 5px;
+    top: -70px;
     left: 20px;
     height: 480px;
   }
@@ -106,10 +122,15 @@
     padding-top: 48px;
   }
 
+  .features__beige-wrapper-content {
+    @include centered($desktop-width);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .features__list {
     @include flex-container;
     @include block-padding($desktop-block-padding);
-    @include centered($desktop-width);
     margin-top: -94px;
     justify-content: space-between;
     background-image: none;
@@ -117,9 +138,10 @@
   }
 
   .features__white-wrapper {
-    @include centered($desktop-width);
     @include block-padding($desktop-block-padding);
-    margin: 18px 0 90px;
+    @include centered($desktop-width);
+    margin-top: 18px;
+    margin-bottom: 90px;
   }
 
   .features__question {

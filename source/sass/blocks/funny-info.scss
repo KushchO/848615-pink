@@ -12,10 +12,16 @@
 
 @media (min-width: 660px) {
   .funny-info {
+    display: block;
+    width: 100%;
+    padding-top: 58px;
+  }
+
+  .funny-info__bg-wrapper {
     @include block-padding($tablet-block-padding);
     @include flex-container;
+    @include centered($tablet-width);
     justify-content: space-between;
-    padding-top: 58px;
   }
 
   .funny-info__picture-wrapper {
@@ -71,10 +77,14 @@
 
 @media (min-width: 960px) {
   .funny-info {
-    @include block-padding($desktop-block-padding);
     background-color: #f2f2f2;
     padding-top: 18px;
     padding-bottom: 62px;
+  }
+
+  .funny-info__bg-wrapper {
+    @include block-padding($desktop-block-padding);
+    @include centered($desktop-width);
   }
 
   .funny-info__title {
