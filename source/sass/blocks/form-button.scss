@@ -1,11 +1,27 @@
 .form-button {
   @include titles-white;
   display: block;
-  width: 100%;
+  width: 280px;
   background-color: #2aab6d;
   border: none;
-  padding: 20px;
+  padding: 21px 0;
   box-sizing: border-box;
   text-align: center;
   text-decoration: none;
+  border-radius: 3px;
+  outline: none;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
 }

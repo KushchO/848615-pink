@@ -1,0 +1,19 @@
+
+.triangle-spacer {
+  fill: #ffffff;
+  margin-left: -20px;
+}
+
+@media (min-width: 660px) {
+  .triangle-spacer {
+    width: 660px;
+    height: 52px;
+  }
+}
+
+@media (min-width: 960px) {
+  .triangle-spacer {
+    width: 975px;
+    height: 76px;
+  }
+}

@@ -8,8 +8,6 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .page-wrapper {
-    @include centered($desktop-width);
-  }
+@media (min-width: 960px) {
+  width: 100%;
 }
