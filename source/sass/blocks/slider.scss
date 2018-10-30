@@ -1,0 +1,30 @@
+.slider__toggle {
+  @include reset-margin-padding;
+  width: 6px;
+  height: 6px;
+  background: $dark-blue;
+  opacity: 0.3;
+  border-radius: 50%;
+  border: none;
+
+  &:not(:first-child) {
+    margin-left: 15px;
+  }
+
+  &--active {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 2px solid #000000;
+  }
+
+  &:hover {
+    background: $dark-blue;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background: $dark-blue;
+    opacity: 0.1;
+  }
+}

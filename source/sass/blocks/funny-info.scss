@@ -2,25 +2,130 @@
   display: none;
 }
 
+.funny-info__br {
+  display: none;
+}
+
+.funny-info__br-tab {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .funny-info {
     @include block-padding($tablet-block-padding);
     @include flex-container;
     justify-content: space-between;
+    padding-top: 58px;
+  }
+
+  .funny-info__picture-wrapper {
+    position: relative;
+    margin-left: -2px;
+
+    &::before {
+      @include before-after(202px, 202px);
+      border: 13px solid $red;
+      border-radius: 50%;
+      top: 55px;
+      left: 22px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "24";
+      font-size: 96px;
+      font-weight: bold;
+      color: $red;
+      top: 84px;
+      left: 65px;
+    }
   }
 
   .funny-info__text-wrapper {
     width: 310px;
+    margin-top: 36px;
+  }
+
+  .funny-info__clock {
+    fill: #dedede;
+    width: 246px;
+    height: 275px;
+  }
+
+  .funny-info__title {
+    @include reset-margin-padding;
+    @include heading($middle-big, $font-bold, 36px);
+  }
+
+  .funny-info__text {
+    @include reset-margin-padding;
+    line-height: $line-h-big;
+    margin: 12px 0;
+    padding-right: 10px;
+  }
+
+  .funny-info__br-tab {
+    display: inline;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .funny-info {
     @include block-padding($desktop-block-padding);
     background-color: #f2f2f2;
+    padding-top: 18px;
+    padding-bottom: 62px;
+  }
+
+  .funny-info__title {
+    display: inline-block;
+  }
+
+  .funny-info__title:nth-child(2) {
+    margin-left: 4px;
   }
 
   .funny-info__text-wrapper {
     width: 570px;
+    margin-top: 91px;
+    margin-right: 5px;
+  }
+
+  .funny-info__text {
+    @include heading($title-font, $font-regular, $line-h-big1);
+    margin: 21px 0 31px;
+  }
+
+  .funny-info__link {
+    @include heading($title-font, $font-regular, $line-h-big1, $red);
+    text-decoration: underline;
+  }
+
+  .funny-info__br {
+    display: inline;
+  }
+
+  .funny-info__clock {
+    width: 308px;
+    height: 345px;
+  }
+
+  .funny-info__picture-wrapper {
+    &::before {
+      @include before-after(253px, 253px);
+      top: 69px;
+      left: 24px;
+      border-width: 16px;
+    }
+
+    &::after {
+      font-size: 120px;
+      top: 107px;
+      left: 81px;
+    }
+  }
+
+  .funny-info__br-tab {
+    display: none;
   }
 }

@@ -5,7 +5,8 @@
 }
 
 @mixin centered($width) {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: $width;
 }
 
@@ -62,4 +63,40 @@
 @mixin big-light-text {
   font-size: $large-font;
   font-weight: $font-light;
+}
+
+@mixin bigger-font {
+  font-size: $bigger-font;
+  line-height: $line-h-bigger;
+  font-weight: $font-light;
+}
+
+@mixin biggest-light-text {
+  font-size: $biggest-font;
+  font-weight: $font-light;
+}
+
+@mixin heading($font-size, $font-weight: $font-bold, $line-height: 1.2, $font-color: #000000) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $font-color;
+  line-height: $line-height;
+}
+
+@mixin before-after($width, $height) {
+  position: absolute;
+  display: block;
+  content: "";
+  width: $width;
+  height: $height;
+  box-sizing: border-box;
+}
+
+@mixin radio-check($width: 35px, $height: 35px) {
+  width: $width;
+  height: $height;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  display: block;
+  margin-right: 30px;
 }

@@ -1,4 +1,5 @@
 /*SASS*/
+@import "normolize.scss";
 @import "veraibles.scss";
 @import "mixins.scss";
 /*Utility*/
@@ -7,6 +8,10 @@
 /*Base blocks*/
 @import "../sass/blocks/form-button.scss";
 @import "../sass/blocks/button.scss";
+@import "../sass/blocks/slider.scss";
+@import "../sass/blocks/triangle-spacer.scss";
+@import "../sass/blocks/social-list.scss";
+@import "../sass/blocks/link.scss";
 /*Blocks*/
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/site-navigation.scss";
@@ -21,7 +26,6 @@
 @import "../sass/blocks/map.scss";
 @import "../sass/blocks/contest.scss";
 @import "../sass/blocks/page-footer.scss";
-@import "../sass/blocks/social-list.scss";
 @import "../sass/blocks/popup.scss";
 @import "../sass/blocks/gallery.scss";
 @import "../sass/blocks/best-panorama.scss";

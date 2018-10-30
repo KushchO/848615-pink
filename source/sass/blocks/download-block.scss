@@ -1,19 +1,20 @@
 .download-block {
   @include block-padding($mobile-block-padding);
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 25px;
   background-color: #1d2631;
+  padding-bottom: 30px;
 }
 
 .download-block__button {
-  margin-bottom: 32px;
+  margin-top: 2px;
+  margin-bottom: 30px;
 }
 
 .download-block__list {
   @include flex-container;
   @include reset-list;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   align-content: center;
 }
 
@@ -27,7 +28,7 @@
 }
 
 .download-block_item {
-  margin-left: 30px;
+  margin-left: 35px;
 }
 
 .download-block_item:last-child {
@@ -39,11 +40,63 @@
   text-align: center;
   color: white;
   font-weight: $font-light;
+  line-height: $line-h-big;
 }
 
 @media (min-width: 660px) {
   .download-block {
+    @include reset-margin-padding;
     background: transparent;
     width: 300px;
+    margin-left: 20px;
+    margin-top: 27px;
+    margin-bottom: 108px;
+  }
+
+  .download-block__list {
+    width: 270px;
+    margin: 0 auto 35px;
+  }
+
+  .download-block_item {
+    margin-left: 30px;
+  }
+
+  .download-block__button {
+    margin-top: 31px;
+    margin-bottom: 42px;
+
+    &:hover {
+      background-color: #ffffff;
+      color: $red;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: rgba(210, 40, 86, 0.3);
+    }
+  }
+
+  .download-block__info {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 960px) {
+  .download-block {
+    margin-bottom: 123px;
+    margin-left: 6px;
+  }
+
+  .download-block__button {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-bottom: 65px;
+    margin-top: 0;
+  }
+
+  .download-block__list {
+    margin-bottom: 53px;
   }
 }

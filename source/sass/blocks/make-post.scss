@@ -1,15 +1,23 @@
 .make-post {
-  @include block-padding($mobile-block-padding);
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3px;
+  padding-top: 23px;
+}
+
+.make-post__interactive-wrapper {
+  @include block-padding($mobile-block-padding);
+  padding-top: 36px;
 }
 
 .make-post__effects-list {
   @include flex-container;
   @include reset-list;
-  justify-content: center;
-  margin-bottom: 50px;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 21px;
+  padding: 0 10px;
 }
 
 .make-post__effects-item {
@@ -17,64 +25,258 @@
   position: relative;
 }
 
+.make-post__message {
+  @include block-padding($mobile-block-padding);
+  @include reset-margin-padding;
+  line-height: $line-h-big1;
+}
+
+.make-post__tool-wrapper {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  margin-top: 42px;
+  padding-bottom: 40px;
+}
+
+.make-post__item--contrast {
+  margin-top: 8px;
+  margin-right: 14px;
+}
+
+.make-post__item--crop {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.make-post__item--fill {
+  margin-top: 5px;
+  margin-left: -2px;
+}
+
 .make-post__svg {
-  fill: $gray;
+  fill: $dark-blue;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .make-post__svg--active {
+  opacity: 1;
   fill: $red;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.make-post__item-crop--active {
+  .make-post__range::after {
+    background-color: $red;
+  }
+}
+
+.make-post__range-wrapper {
+  margin-top: 18px;
+  width: 100%;
+  height: 30px;
 }
 
 .make-post__post-it {
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.make-post__input-range {
+  display: none;
 }
 
 .make-post__range {
   display: none;
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  left: -1px;
+  top: 70px;
+
+  &::before {
+    @include before-after(240px, 2px);
+    background-color: $dark-blue;
+    margin: 15px auto 0;
+    position: static;
+  }
+
+  &::after {
+    @include before-after(14px, 14px);
+    background-color: #ffffff;
+    border: 2px solid $red;
+    margin: 15px auto 0;
+    border-radius: 50%;
+    top: -6px;
+    left: 211px;
+  }
 }
 
-.make-post__crop--active ~ input {
+.make-post__item-crop--active .make-post__range--crop {
   display: block;
 }
 
-.make-post__fill--active ~ input {
+.make-post__item-fill--avtive .make-post__range--fill {
   display: block;
 }
 
-.make-post__contrast--active ~ input {
+.make-post__item-contrast--avtive .make-post__range--contrast {
   display: block;
 }
 
-.make_post__your-img {
-  background-image: url("../img/photo-road-mobile@1x.jpg");
-  width: 280px;
-  height: 375px;
+.make-post__buttons-wrapper {
+  padding-top: 37px;
+  position: relative;
+
+  &::before {
+    @include before-after(320px, 1px);
+    background-color: #dddfe0;
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
 }
+
 
 @media (min-width: 660px) {
-  .make_post__tool-wrapper {
+  .make-post {
+    margin-bottom: 15px;
+  }
+
+  .make-post__message {
+    font-size: $title-font;
+    line-height: $line-h-big1;
+  }
+
+  .make-post__tool-wrapper {
     @include flex-container;
+    @include block-padding($mobile-block-padding);
+    padding-top: 58px;
+    margin-top: 67px;
+    padding-bottom: 53px;
   }
 
   .make-post__interactive-wrapper {
     @include flex-container;
     width: 320px;
+    padding-top: 0;
+    padding-left: 47px;
+    padding-right: 13px;
   }
 
-  .make_post__your-img {
-    background-image: url("../img/photo-road-tablet@1x.jpg");
+  .make-post__your-img {
     width: 300px;
     height: 400px;
   }
 
   .make-post__effects-list {
+    @include reset-margin-padding;
+    position: static;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-right: 7px;
     width: 100%;
+  }
+
+  .make-post__item {
+    @include flex-container;
+    @include reset-margin-padding;
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding-bottom: 19px;
+    padding-right: 18px;
+    border-bottom: 1px solid #dddfe0;
+    margin-bottom: 22px;
+  }
+
+  .make-post__item:nth-last-of-type(2) {
+    margin-bottom: 0;
   }
 
   .make-post__effects-item {
     @include flex-container;
     width: 100%;
+  }
+
+  .make-post__range-wrapper {
+    display: none;
+  }
+
+  .make-post__svg {
+    fill: $red;
+    margin: auto 0;
+
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 26px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+      margin-left: 5px;
+    }
+  }
+
+  .make-post__item-crop--active .make-post__range--crop {
+    display: flex;
+  }
+
+  .make-post__item-fill--avtive .make-post__range--fill {
+    display: flex;
+  }
+
+  .make-post__item-contrast--avtive .make-post__range--contrast {
+    display: flex;
+  }
+
+  .make-post__range {
+    @include flex-container;
+    position: static;
+    width: 202px;
+
+
+    &::before {
+      margin: auto 0;
+      width: 202px;
+    }
+
+    &--crop {
+      &::after {
+        left: 199px;
+      }
+    }
+
+    &--fill {
+      &::after {
+        left: 77px;
+      }
+    }
+
+    &--contrast {
+      &::after {
+        left: 149px;
+      }
+    }
+  }
+
+  .make-post__buttons-wrapper::before {
+    display: none;
   }
 
   .make-post__buttons-wrapper {
@@ -83,23 +285,107 @@
     width: 100%;
   }
 
-  .make-post__range {
-    display: block;
+  .make-post__post-it {
+    margin-bottom: 25px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .make-post {
     @include block-padding($desktop-block-padding);
+    padding-top: 0;
+    margin-bottom: 81px;
   }
 
   .make-post__interactive-wrapper {
-    width: 530px;
+    box-sizing: content-box;
+    width: 410px;
+    padding-right: 0;
+    margin-left: 43px;
+  }
+
+  .make-post__item {
+    @include flex-container;
+    width: 410px;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-bottom: 11px;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .make-post__item--contrast {
+    padding-bottom: 20px;
+  }
+
+  .make-post__tool-wrapper {
+    padding: 57px 50px 58px 79px;
+    margin-top: 65px;
+  }
+
+  .make-post__effects-list {
+    padding-top: 0;
+    margin-top: -4px;
   }
 
   .make-post__post-it,
   .make-post__cancel {
-    width: 40%;
-    margin: 0 2.5%;
+    width: 184px;
+    margin-bottom: 0;
+  }
+
+  .make-post__svg {
+    margin-right: 5px;
+
+    &--crop {
+      width: 48px;
+      height: 48px;
+    }
+
+    &--fill {
+      width: 52px;
+      height: 47px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+      margin-left: 5px;
+    }
+  }
+
+  .make-post__range {
+    width: 288px;
+    margin: auto 0;
+
+    &::before {
+      margin: auto 0;
+      width: 288px;
+      margin-left: -11px;
+    }
+
+    &--crop {
+      &::after {
+        left: 164px;
+        top: 1px;
+      }
+    }
+
+    &--fill {
+      &::after {
+        left: 340px;
+        top: 1px;
+      }
+    }
+
+    &--contrast {
+      &::after {
+        left: 252px;
+      }
+    }
+  }
+
+  .make-post__buttons-wrapper {
+    justify-content: space-between;
   }
 }
