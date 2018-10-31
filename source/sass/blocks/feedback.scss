@@ -112,6 +112,9 @@
     .feedback__arrow-left {
       display: block;
       position: absolute;
+      background-image: url(../img/icon-review-arrow-left.svg);
+      width: 22px;
+      height: 42px;
       top: 15px;
       left: 0;
       opacity: 0.3;
@@ -128,6 +131,9 @@
     .feedback__arrow-right {
       display: block;
       position: absolute;
+      background-image: url(../img/icon-review-arrow-right.svg);
+      width: 22px;
+      height: 42px;
       top: 15px;
       right: 0;
       opacity: 0.3;
