@@ -7,20 +7,18 @@
   position: relative;
 
   &::before {
-  @include titles-white;
-  content: "Панорама дня";
-  font-size: 12px;
-  top: -122px;
-  right: 19px;
-  position: absolute;
-  top: -122px;
-  right: 21px;
-  background-color: $red;
-  padding: 10px 19px;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 18px;
-  text-transform: uppercase;
+    @include titles-white;
+    content: "Панорама дня";
+    font-size: 12px;
+    position: absolute;
+    top: -122px;
+    right: 21px;
+    background-color: $red;
+    padding: 10px 19px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 18px;
+    text-transform: uppercase;
   }
 }
 

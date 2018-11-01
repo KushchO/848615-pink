@@ -300,6 +300,7 @@
   }
 
   .make-post__interactive-wrapper {
+    flex-direction: column;
     box-sizing: content-box;
     width: 410px;
     padding-right: 0;
@@ -385,10 +386,6 @@
         left: 252px;
       }
     }
-  }
-
-  .make-post__interactive-wrapper {
-    flex-direction: column;
   }
 
   .make-post__buttons-wrapper {

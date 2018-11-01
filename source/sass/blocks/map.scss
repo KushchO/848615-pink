@@ -7,7 +7,7 @@
 }
 
 @media (min-resolution: 144dpi),
-(min-resolution: 1.5dppx) {
+  (min-resolution: 1.5dppx) {
   .map {
     width: 100vw;
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -62,7 +62,7 @@
   }
 
   @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+    (min-resolution: 1.5dppx) {
     .map {
       background-image: url("../img/bg-map-tablet@2x.jpg");
       background-size: 700px auto;
@@ -96,7 +96,7 @@
   }
 
   @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+    (min-resolution: 1.5dppx) {
     .map {
       background-image: url("../img/bg-map-desktop@2x.jpg");
       background-size: 1200px auto;

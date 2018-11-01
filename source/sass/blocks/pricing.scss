@@ -156,11 +156,11 @@
   .pricing__hit-element {
     font-weight: 500;
     top: -11px;
-    left: 0px;
+    left: 0;
     width: 63px;
     height: 73px;
 
-    &::before{
+    &::before {
       top: 21px;
     }
   }

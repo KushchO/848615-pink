@@ -15,7 +15,7 @@
 }
 
 @media (min-resolution: 144dpi),
-(min-resolution: 1.5dppx) {
+  (min-resolution: 1.5dppx) {
   .page-title--index {
     background-image: url("../img/iphone-hand-mobile@2x.png");
     background-size: 258px auto;
@@ -65,7 +65,7 @@
   }
 
   @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+    (min-resolution: 1.5dppx) {
     .page-title--index {
       background-image: url("../img/iphone-hand-tablet@2x.png");
       background-size: 700px auto;
@@ -119,7 +119,7 @@
   }
 
   @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+    (min-resolution: 1.5dppx) {
     .page-title--index {
       background-image: url("../img/iphone-hand-desktop@2x.png");
       background-size: 1050px auto;
