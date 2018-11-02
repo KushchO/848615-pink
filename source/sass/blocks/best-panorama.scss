@@ -2,23 +2,24 @@
   position: relative;
 }
 
-.best-panorama__mark {
-  @include titles-white;
-  font-size: 12px;
-  width: 140px;
-  height: 36px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: $red;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 18px;
-}
-
 .best-panorama__img {
   margin-left: -20px;
+  position: relative;
+
+  &::before {
+    @include titles-white;
+    content: "Панорама дня";
+    font-size: 12px;
+    position: absolute;
+    top: -122px;
+    right: 21px;
+    background-color: $red;
+    padding: 10px 19px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: 660px) {
@@ -64,22 +65,42 @@
   .best-panorama__img {
     width: 660px;
     height: 509px;
+
+    img {
+      width: 700px;
+      height: fit-content;
+      margin-left: -20px;
+    }
+
+    &::before {
+      padding: 10px 19px;
+      top: -439px;
+      right: 40px;
+    }
   }
 }
 
 @media (min-width: 960px) {
   .best-panorama {
-    margin-bottom: 49px;
+    margin-bottom: 51px;
   }
 
   .best-panorama__img {
-    margin-left: -10px;
-    width: 960px;
+    margin-left: -130px;
+    width: 1200px;
     height: 506px;
-  }
 
-  .best-panorama__mark {
-    line-height: 12px;
+    img {
+      width: 1200px;
+      margin-left: 0;
+    }
+
+    &::before {
+      line-height: 12px;
+      top: -436px;
+      right: 130px;
+      padding: 11px 19px;
+    }
   }
 
   .gallery__likes {

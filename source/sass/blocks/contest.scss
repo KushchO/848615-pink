@@ -1,5 +1,6 @@
 .contest {
-  margin-bottom: 10px;
+  @include centered($mobile-width);
+  margin-bottom: 40px;
   padding-bottom: 12px;
 }
 
@@ -207,7 +208,9 @@ input:checked ~ .contest__label-check .contest__radio-box {
 
 @media (min-width: 660px) {
   .contest {
+    @include centered($tablet-width);
     padding-top: 92px;
+    margin-bottom: 10px;
   }
 
   .contest__form {
@@ -257,7 +260,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
       url("../img/icon-phone.svg"),
       linear-gradient(to left, #e5e5e5, #e5e5e5);
     background-position: 457px 20px, 437px 0;
-    background-size: 20px 21px, 60px 60px;
+    background-size: 20px 21px, 64px 64px;
     background-repeat: no-repeat;
   }
 
@@ -266,7 +269,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
       url("../img/icon-mail.svg"),
       linear-gradient(to left, #e5e5e5, #e5e5e5);
     background-position: 457px 20px, 437px 0;
-    background-size: 18px 19px, 60px 60px;
+    background-size: 18px 19px, 64px 64px;
     background-repeat: no-repeat;
   }
 
@@ -395,6 +398,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
 
 @media (min-width: 960px) {
   .contest {
+    @include centered($desktop-width);
     margin-bottom: 0;
   }
 

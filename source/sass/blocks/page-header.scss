@@ -1,8 +1,8 @@
 .page-header {
   @include flex-container;
+  @include centered($mobile-width);
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #283645;
-  width: 100%;
   text-align: center;
   justify-content: space-between;
   min-height: 66px;
@@ -16,6 +16,20 @@
   &--no-js {
     .page-header__nav-wrapper {
       background-color: #283645;
+    }
+  }
+}
+
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 709px auto;
+    background-position: 50% -4px;
+    background-repeat: no-repeat;
+
+    &--open-menu {
+      background-position: 50% 255px;
     }
   }
 }
@@ -115,12 +129,27 @@
 
 @media (min-width: 660px) {
   .page-header {
+    @include centered($tablet-width);
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: -270px 0;
 
     &--open-menu {
       background-position: -270px 255px;
+    }
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+      background-position: 50% 0;
+      background-repeat: no-repeat;
+
+      &--open-menu {
+        background-position: 50% 257px;
+      }
     }
   }
 
@@ -148,9 +177,20 @@
 
 @media (min-width: 960px) {
   .page-header {
+    width: 100%;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+      background-position: 50% 12px;
+      background-repeat: no-repeat;
+    }
   }
 
   .page-header__logo {

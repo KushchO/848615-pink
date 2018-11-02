@@ -1,7 +1,7 @@
 .make-post {
-  width: 100%;
+  @include centered($mobile-width);
   text-align: center;
-  margin-bottom: 3px;
+  margin-bottom: 32px;
   padding-top: 23px;
 }
 
@@ -146,6 +146,7 @@
 
 @media (min-width: 660px) {
   .make-post {
+    @include centered($tablet-width);
     margin-bottom: 15px;
   }
 
@@ -293,11 +294,13 @@
 @media (min-width: 960px) {
   .make-post {
     @include block-padding($desktop-block-padding);
+    @include centered($desktop-width);
     padding-top: 0;
-    margin-bottom: 81px;
+    margin-bottom: 80px;
   }
 
   .make-post__interactive-wrapper {
+    flex-direction: column;
     box-sizing: content-box;
     width: 410px;
     padding-right: 0;
@@ -309,7 +312,7 @@
     width: 410px;
     box-sizing: border-box;
     padding-left: 0;
-    padding-bottom: 11px;
+    padding-bottom: 13px;
     margin-left: 0;
     margin-bottom: 15px;
   }
@@ -387,5 +390,6 @@
 
   .make-post__buttons-wrapper {
     justify-content: space-between;
+    padding-top: 0;
   }
 }

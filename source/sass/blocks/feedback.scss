@@ -1,5 +1,6 @@
 .feedback {
   @include block-padding($mobile-block-padding);
+  @include centered($mobile-width);
   text-align: center;
   padding-top: 45px;
   padding-bottom: 40px;
@@ -55,6 +56,7 @@
 
 @media (min-width: 660px) {
   .feedback {
+    @include centered($tablet-width);
     padding-top: 82px;
     padding-bottom: 22px;
   }
@@ -89,6 +91,7 @@
 @media (min-width: 960px) {
   .feedback {
     @include block-padding($desktop-block-padding);
+    @include centered($desktop-width);
     padding-top: 73px;
     padding-bottom: 9px;
   }
@@ -109,6 +112,9 @@
     .feedback__arrow-left {
       display: block;
       position: absolute;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      width: 22px;
+      height: 42px;
       top: 15px;
       left: 0;
       opacity: 0.3;
@@ -125,6 +131,9 @@
     .feedback__arrow-right {
       display: block;
       position: absolute;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      width: 22px;
+      height: 42px;
       top: 15px;
       right: 0;
       opacity: 0.3;
