@@ -107,15 +107,12 @@
     position: static;
     background: none;
     padding-bottom: 0;
-  }
 
-  .features__item--last {
     .features__img {
       display: block;
       position: absolute;
       bottom: -7px;
-      left: 0px;
-    }
+      left: 0;
   }
 
   .features__item--2 {
@@ -138,9 +135,13 @@
     @include flex-container;
     @include block-padding($desktop-block-padding);
     margin-top: -94px;
-    justify-content: space-between;
+    justify-content: start;
     background-image: none;
     padding-left: 10px;
+  }
+
+  .features__item:not(:last-child) {
+    margin-right: 20px;
   }
 
   .features__white-wrapper {

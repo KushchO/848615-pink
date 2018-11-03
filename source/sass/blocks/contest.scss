@@ -191,7 +191,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
 }
 
 .contest__about-required {
-  display: block;
+  display: none;;
   width: 100%;
   font-size: 14px;
   text-align: center;
@@ -200,10 +200,6 @@ input:checked ~ .contest__label-check .contest__radio-box {
 
 .contest__highlighted {
   color: #d22856;
-}
-
-.contest__about-required {
-  display: none;
 }
 
 @media (min-width: 660px) {
@@ -377,6 +373,9 @@ input:checked ~ .contest__label-check .contest__radio-box {
     margin: auto 0;
     width: auto;
   }
+  .contest__about-add {
+    display: none;
+  }
 
   .contest_button {
     margin: 0;
@@ -529,11 +528,15 @@ input:checked ~ .contest__label-check .contest__radio-box {
   }
 
   .contest__about-required {
-    display: inline;
+    width: auto;
   }
 
-  .contest__about-required {
-    width: auto;
+  .contest__highlighted {
+    margin-right: 3px;
+  }
+
+  .contest__about-add {
+    display: inline;
   }
 
   .contest_button {

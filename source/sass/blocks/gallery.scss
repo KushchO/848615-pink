@@ -140,6 +140,7 @@
 
   .gallery__list {
     @include block-padding($desktop-block-padding);
+    justify-content: flex-start;
   }
 
   .gallery__item {
@@ -147,6 +148,18 @@
     margin-bottom: 55px;
     padding-bottom: 24px;
   }
+
+  .gallery__item:not(:nth-child(3n + 2)) {
+    margin-left: 20px;
+  }
+
+  .gallery__item:first-child {
+    margin-left: 0;
+  }
+
+  .gallery__item
+
+
 
   .gallery__img {
     width: 300px;
