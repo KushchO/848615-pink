@@ -13,9 +13,13 @@
 .download-block__list {
   @include flex-container;
   @include reset-list;
-  justify-content: space-between;
+  justify-content: start;
   margin-bottom: 20px;
   align-content: center;
+}
+
+.download-block_item:not(:last-child) {
+  margin-right: 6px;
 }
 
 .download-block__link {
@@ -28,7 +32,7 @@
 }
 
 .download-block_item {
-  margin-left: 35px;
+  margin-left: 33px;
 }
 
 .download-block_item:last-child {

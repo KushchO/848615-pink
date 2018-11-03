@@ -36,7 +36,7 @@
 @media (min-width: 960px) {
   .site-navigation {
     @include flex-container;
-    justify-content: space-between;
+    justify-content: start;
     width: 625px;
     margin-top: 24px;
     margin-right: -3px;
@@ -47,6 +47,10 @@
     width: auto;
     background-color: transparent;
     height: auto;
+  }
+
+  .site-navigation__item:not(:last-child) {
+    margin-right: 80px;
   }
 
   .site-navigation__link {

@@ -140,12 +140,21 @@
 
   .gallery__list {
     @include block-padding($desktop-block-padding);
+    justify-content: flex-start;
   }
 
   .gallery__item {
     width: 300px;
     margin-bottom: 55px;
     padding-bottom: 24px;
+  }
+
+  .gallery__item:not(:nth-child(3n + 2)) {
+    margin-left: 20px;
+  }
+
+  .gallery__item:first-child {
+    margin-left: 0;
   }
 
   .gallery__img {

@@ -1,5 +1,6 @@
 .map {
   background-image: url("../img/bg-map-mobile@1x.png");
+  background-color: #eae7e0;
   background-repeat: no-repeat;
   background-position: 0 -445px;
   position: relative;
@@ -19,6 +20,7 @@
 .map__svg {
   width: 100%;
   position: absolute;
+  height: 35px;
   top: -1px;
   left: 0;
   fill: #ffffff;
