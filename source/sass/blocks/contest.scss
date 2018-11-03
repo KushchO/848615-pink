@@ -202,7 +202,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
   color: #d22856;
 }
 
-.contest__about-required--add {
+.contest__about-required {
   display: none;
 }
 
@@ -528,7 +528,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
     height: 127px;
   }
 
-  .contest__about-required--add {
+  .contest__about-required {
     display: inline;
   }
 
