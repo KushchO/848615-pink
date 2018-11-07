@@ -1,5 +1,6 @@
 .page-title {
   @include block-padding($mobile-block-padding);
+  @include centered($mobile-width);
   background-repeat: no-repeat;
   min-height: 170px;
   padding-top: 30px;
@@ -8,9 +9,10 @@
 
 .page-title--index {
   @include reset-margin-padding;
+  @include centered($mobile-width);
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: 0 91px;
-  padding-top: 377px;
+  background-position: 0 110px;
+  padding-top: 397px;
   padding-bottom: 0;
 }
 
@@ -41,14 +43,15 @@
 @media (min-width: 660px) {
   .page-title {
     box-sizing: border-box;
+    width: 660px;
     min-height: 330px;
     padding-top: 22px;
   }
 
   .page-title--index {
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -20px 54px;
-    padding-top: 32px;
+    background-position: -20px 73px;
+    padding-top: 50px;
 
     .page-title__title {
       display: block;
@@ -103,10 +106,10 @@
 
   .page-title--index {
     padding-top: 74px;
-    padding-left: 0;
+    padding-left: 3px;
     padding-bottom: 0;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 23px 100px;
+    background-position: 25px 100px;
 
     .page-title__title {
       @include biggest-light-text;

@@ -28,7 +28,7 @@
   @include reset-margin-padding;
   border: 2px solid #e5e5e5;
   background-color: #283645;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-bottom: 20px;
   display: table-cell;
   width: 276px;
@@ -42,41 +42,45 @@
 .pricing__title {
   @include titles-white;
   @include reset-margin-padding;
+  line-height: 30px;
 }
 
 .pricing__prise {
   @include big-light-text;
   @include reset-margin-padding;
   color: #ffffff;
+  line-height: 30px;
 }
 
 .pricing__includes-row {
   background-color: #ffffff;
+  line-height: 30px;
 }
 
 .pricing__heading--hit {
   position: relative;
-}
-
-.pricing__hit-element {
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
-  color: #ffffff;
-  position: absolute;
-  top: 0;
-  left: -2px;
-  width: 74px;
-  height: 73px;
-  display: block;
-
 
   &::before {
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 74px;
+    height: 73px;
+    display: block;
+    content: "";
+  }
+
+  &::after {
     @include before-after(25px, 16px);
     content: "ХИТ";
     font-weight: 400;
     transform: rotate(-45deg);
     top: 17px;
     left: 8px;
+    color: #ffffff;
   }
 }
 
@@ -92,8 +96,9 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  padding: 20px 18px 18px 20px;
+  padding: 14px 18px 12px 20px;
   text-transform: uppercase;
+  align-items: center;
 
   &--no {
     padding-top: 15px;
@@ -102,6 +107,11 @@
       margin-top: 3px;
     }
   }
+}
+
+.pricing__filter-on-mobile {
+  display: inline-block;
+  max-width: 150px;
 }
 
 .pricing__includes--checked {
@@ -115,6 +125,7 @@
 
 .pricing__includes-svg--yes {
   fill: #49ca50;
+  margin-top: 5px;
 }
 
 .pricing__triangle-poly {
@@ -143,31 +154,36 @@
 
   .pricing__heading {
     width: 160px;
-    padding-top: 18px;
-    padding-bottom: 9px;
+    padding-top: 14px;
+    padding-bottom: 5px;
     border: 2px solid #283645;
     border-top: none;
+  }
+
+  .pricing__prise, .pricing__title {
+    line-height: 26px;
   }
 
   .pricing__heading:not(:last-child):not(:first-child) {
     border-right: 2px solid #ffffff;
   }
 
-  .pricing__hit-element {
-    font-weight: 500;
-    top: -11px;
-    left: 0;
-    width: 63px;
-    height: 73px;
-
-    &::before {
-      top: 21px;
-    }
-  }
-
   .pricing__heading--hit {
     background-position: 0 -12px;
     overflow: hidden;
+
+    &::before {
+      font-weight: 500;
+      top: -13px;
+      left: 0;
+      width: 63px;
+      height: 73px;
+    }
+
+    &::after {
+      top: 10px;
+      left: 5px;
+    }
   }
 
   .pricing__heading--empty {
@@ -178,6 +194,10 @@
     display: none;
   }
 
+  .pricing__includes-svg--yes {
+    margin-top: 0;
+  }
+
   .pricing__includes,
   .pricing__heading--empty {
     display: table-cell;
@@ -185,6 +205,7 @@
 
   .pricing__includes-row {
     display: table-row;
+    line-height: 18px;
   }
 
   .pricing__filter-on-mobile {
@@ -193,8 +214,15 @@
 
   .pricing__cell-wrapper {
     display: block;
-    padding-top: 11px;
-    padding-bottom: 5px;
+    padding-top: 13px;
+    padding-bottom: 8px;
+  }
+
+  .pricing__includes--unchecked {
+    .pricing__cell-wrapper {
+      padding-top: 11px;
+      padding-bottom: 4px;
+    }
   }
 
   .pricing__title {
@@ -244,7 +272,15 @@
   }
 
   .pricing__heading {
-    padding-bottom: 19px;
+    padding-bottom: 20px;
+    padding-top: 18px;
+  }
+
+  .pricing__includes--unchecked {
+    .pricing__cell-wrapper {
+      padding-top: 17px;
+      padding-bottom: 12px;
+    }
   }
 
   .pricing__includes-text {
@@ -265,18 +301,18 @@
     }
   }
 
-  .pricing__hit-element {
-    top: 0;
-    left: 0;
-    width: 75px;
+  .pricing__heading--hit {
+    background-position: 0 -1px;
 
     &::before {
+      top: 0;
+      left: 0;
+      width: 75px;
+    }
+
+    &::after {
       top: 19px;
       left: 11px;
     }
-  }
-
-  .pricing__heading--hit {
-    background-position: 0 -1px;
   }
 }

@@ -8,6 +8,7 @@
 
 .feedback__title {
   @include titles;
+
 }
 
 .feedback__text {
@@ -15,14 +16,6 @@
   line-height: 30px;
   margin-top: 15px;
   margin-bottom: 20px;
-}
-
-.feedback__arrow-left,
-.feedback__arrow-right {
-  display: none;
-  background: transparent;
-  border: none;
-  outline: none;
 }
 
 .feedback__list {
@@ -36,13 +29,14 @@
 .feedback__name {
   @include reset-margin-padding;
   @include titles;
+  line-height: 26px;
 }
 
 .feedback__item {
   display: none;
 }
 
-.feedback__item--first {
+.feedback__item--active {
   display: block;
 }
 
@@ -65,7 +59,7 @@
     margin-bottom: 34px;
   }
 
-  .feedback__item--first {
+  .feedback__item--active {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -108,44 +102,6 @@
   .feedback__text {
     padding: 0 80px;
     position: relative;
-
-    .feedback__arrow-left {
-      display: block;
-      position: absolute;
-      background-image: url("../img/icon-review-arrow-left.svg");
-      width: 22px;
-      height: 42px;
-      top: 15px;
-      left: 0;
-      opacity: 0.3;
-
-      &:hover {
-        opacity: 0.6;
-      }
-
-      &:active {
-        opacity: 0.1;
-      }
-    }
-
-    .feedback__arrow-right {
-      display: block;
-      position: absolute;
-      background-image: url("../img/icon-review-arrow-right.svg");
-      width: 22px;
-      height: 42px;
-      top: 15px;
-      right: 0;
-      opacity: 0.3;
-
-      &:hover {
-        opacity: 0.6;
-      }
-
-      &:active {
-        opacity: 0.1;
-      }
-    }
   }
 
   .feedback__name {

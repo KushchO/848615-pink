@@ -28,3 +28,55 @@
     opacity: 0.1;
   }
 }
+
+.slider__arrow-left,
+.slider__arrow-right {
+  display: none;
+  background: transparent;
+  border: none;
+}
+
+@media (min-width: 960px) {
+  .slider__arrow-left {
+    display: block;
+    position: absolute;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    width: 22px;
+    height: 42px;
+    top: 27px;
+    left: 0;
+    opacity: 0.3;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .slider__arrow-right {
+    display: block;
+    position: absolute;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    width: 22px;
+    height: 42px;
+    top: 27px;
+    right: 0;
+    opacity: 0.3;
+    background: transparent;
+    border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}

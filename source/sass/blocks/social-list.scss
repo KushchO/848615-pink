@@ -25,19 +25,18 @@
   }
 }
 
-.page-footer__social-svg {
-  position: absolute;
-  top: 17px;
-  left: 16px;
+.social-list__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+}
+
+.social-list__social-svg {
   fill: #d22856;
-}
-
-.social-list__facebook .page-footer__social-svg {
-  top: 14px;
-  left: 19px;
-}
-
-.social-list__twitter .page-footer__social-svg {
-  top: 17px;
-  left: 15px;
 }

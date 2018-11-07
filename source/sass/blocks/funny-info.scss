@@ -2,14 +2,6 @@
   display: none;
 }
 
-.funny-info__br {
-  display: none;
-}
-
-.funny-info__br-tab {
-  display: none;
-}
-
 @media (min-width: 660px) {
   .funny-info {
     display: block;
@@ -61,6 +53,7 @@
   .funny-info__title {
     @include reset-margin-padding;
     @include heading($middle-big, $font-bold, 36px);
+    width: 200px;
   }
 
   .funny-info__text {
@@ -70,15 +63,15 @@
     padding-right: 10px;
   }
 
-  .funny-info__br-tab {
-    display: inline;
+  .funny-info__link {
+    color: $red;
   }
 }
 
 @media (min-width: 960px) {
   .funny-info {
     background-color: #f2f2f2;
-    padding-top: 18px;
+    padding-top: 8px;
     padding-bottom: 62px;
   }
 
@@ -89,6 +82,7 @@
 
   .funny-info__title {
     display: inline-block;
+    width: 100%;
   }
 
   .funny-info__title:nth-child(2) {
@@ -111,10 +105,6 @@
     text-decoration: underline;
   }
 
-  .funny-info__br {
-    display: inline;
-  }
-
   .funny-info__clock {
     width: 308px;
     height: 345px;
@@ -133,9 +123,5 @@
       top: 107px;
       left: 81px;
     }
-  }
-
-  .funny-info__br-tab {
-    display: none;
   }
 }

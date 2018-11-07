@@ -1,7 +1,7 @@
 .make-post {
   @include centered($mobile-width);
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 17px;
   padding-top: 23px;
 }
 
@@ -62,17 +62,19 @@
   }
 }
 
-.make-post__svg--active {
-  opacity: 1;
-  fill: $red;
-
-  &:hover {
+.make-post__item--active {
+  .make-post__svg {
     opacity: 1;
+    fill: $red;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
-.make-post__item-crop--active {
-  .make-post__range::after {
+.make-post__item {
+  .make-post__range:active:after {
     background-color: $red;
   }
 }
@@ -118,15 +120,7 @@
   }
 }
 
-.make-post__item-crop--active .make-post__range--crop {
-  display: block;
-}
-
-.make-post__item-fill--avtive .make-post__range--fill {
-  display: block;
-}
-
-.make-post__item-contrast--avtive .make-post__range--contrast {
+.make-post__item--active .make-post__range {
   display: block;
 }
 
@@ -215,6 +209,7 @@
 
   .make-post__svg {
     fill: $red;
+    opacity: 1;
     margin: auto 0;
 
     &--crop {
@@ -234,7 +229,7 @@
     }
   }
 
-  .make-post__item-crop--active .make-post__range--crop {
+  .make-post__item--active .make-post__range {
     display: flex;
   }
 
