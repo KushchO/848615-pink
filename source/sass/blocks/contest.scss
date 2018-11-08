@@ -270,6 +270,16 @@ input:checked ~ .contest__label-check--box::before {
   .contest__title {
     top: 0;
     left: 0;
+    width: auto;
+    display: block;
+    padding: 0 30px;
+    background: #ffffff;
+    margin-bottom: 0;
+    position: relative;
+
+    &--hidden {
+      display: block;
+    }
   }
 
   .contest__label-input {
@@ -368,7 +378,6 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest__list {
-
     &--apps {
       padding-top: 8px;
     }
@@ -435,19 +444,6 @@ input:checked ~ .contest__label-check--box::before {
   .contest_button {
     width: 300px;
     margin: auto 0;
-  }
-
-  .contest__title {
-    width: auto;
-    display: block;
-    padding: 0 30px;
-    background: #ffffff;
-    margin-bottom: 0;
-    position: relative;
-
-    &--hidden {
-      display: block;
-    }
   }
 }
 
