@@ -97,7 +97,7 @@ gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 80}))
     .pipe(gulp.dest("source/img"));
- });
+});
 
 gulp.task("build", gulp.series(
   "clean",
