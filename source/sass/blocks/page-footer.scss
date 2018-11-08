@@ -62,7 +62,7 @@
 
 .page-footer__maintained {
   max-width: 250px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 
 .page-footer__social {
@@ -86,7 +86,7 @@
 
   .page-footer__maintained {
     display: flex;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .page-footer__maintained-link {
@@ -135,7 +135,7 @@
 
   .page-footer__social {
     margin-left: 10px;
-    margin-top: 0px;
+    margin-top: 2px;
   }
 
   .page-footer__maintained-logo {

@@ -136,15 +136,33 @@
   font-size: 18px;
   line-height: 40px;
   vertical-align: middle;
+  flex-wrap: nowrap;
+
+  &::before {
+    @include radio-check;
+    border-radius: 50%;
+    content: "";
+  }
 }
 
-.contest__checkbox-box {
-  @include radio-check;
+.contest__label-text {
+  max-width: 210px;
 }
 
-.contest__radio-box {
-  @include radio-check;
-  border-radius: 50%;
+.contest__label-check--box {
+  &::before {
+    border-radius: 0;
+  }
+}
+
+
+
+.contest__label-check:hover::before {
+  border-color: $dark-blue;
+}
+
+.contest__label-check:active::before {
+  border-color: $red;
 }
 
 .contest__checkbox-box,
@@ -162,17 +180,18 @@
   margin-bottom: 35px;
 }
 
-input:checked ~ .contest__label-check .contest__checkbox-box {
-  background-image: url("../img/icon-yes-red.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-input:checked ~ .contest__label-check .contest__radio-box {
+input:checked ~ .contest__label-check::before {
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-size: 35px 35px;
   background-position: 0 0;
+}
+
+input:checked ~ .contest__label-check--box::before {
+  background-image: url("../img/icon-yes-red.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 23px 30px;
 }
 
 .contest__archievements,
@@ -234,6 +253,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
     @include centered($tablet-width);
     padding-top: 92px;
     margin-bottom: 10px;
+    padding-bottom: 0;
   }
 
   .contest__form {
@@ -246,6 +266,12 @@ input:checked ~ .contest__label-check .contest__radio-box {
     margin-right: 8px;
     margin-left: 0;
     padding-left: 0;
+  }
+
+  .contest__label-check {
+    &::before {
+      margin-right: 22px;
+    }
   }
 
   .contest__item-input {
@@ -382,7 +408,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
   .contest__emotions {
     border: 2px solid #e5e5e5;
     order: 4;
-    padding: 45px 57px 46px;
+    padding: 45px 57px 48px;
 
     .contest__title {
       padding: 0 35px;
@@ -409,11 +435,13 @@ input:checked ~ .contest__label-check .contest__radio-box {
     @include flex-container;
     margin: auto 0;
     width: auto;
+    max-width: 320px;
   }
 
   .contest_button {
     margin: 0;
     width: 300px;
+    margin: auto 0;
   }
 
   .contest__title {
@@ -432,6 +460,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
   .contest {
     @include centered($desktop-width);
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .contest__form {
@@ -514,7 +543,7 @@ input:checked ~ .contest__label-check .contest__radio-box {
   .contest__archievements {
     padding-bottom: 13px;
     padding-left: 52px;
-    padding-right: 52px;
+    padding-right: 0;
 
     .contest__title {
       left: 251px;

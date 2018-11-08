@@ -14,10 +14,16 @@
   background-color: #f2f2f2;
   position: relative;
   width: 100%;
-}
 
-.features__triangle {
-  width: 100%;
+  &::before {
+    background-image: url("../img/bg-triangle-white.svg");
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 25px;
+    height: auto;
+    display: block;
+    content: "";
+  }
 }
 
 .features__beige-wrapper-content {
@@ -30,7 +36,7 @@
   @include flex-container;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 52px;
+  margin-top: 56px;
 }
 
 .features__img {
@@ -94,6 +100,10 @@
 
   .features__beige-wrapper {
     padding-bottom: 7px;
+
+    &::before {
+      height: 52px;
+    }
   }
 
   .features__beige-wrapper-content {
@@ -104,7 +114,7 @@
   .features__list {
     position: relative;
     padding-left: 310px;
-    margin-top: 20px;
+    margin-top: 24px;
     text-align: left;
   }
 
@@ -140,7 +150,7 @@
   .features__list {
     @include flex-container;
     @include block-padding($desktop-block-padding);
-    margin-top: -94px;
+    margin-top: -90px;
     justify-content: start;
     flex-direction: row;
     background-image: none;
@@ -178,6 +188,10 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 49px;
+
+    &::before {
+      height: 76px;
+    }
   }
 
   .features__item--last {

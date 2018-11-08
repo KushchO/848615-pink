@@ -14,6 +14,16 @@
 .download-block__button {
   margin-top: 2px;
   margin-bottom: 30px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $red;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download-block__list {
@@ -78,18 +88,8 @@
 
   .download-block__button {
     margin-top: 31px;
-    margin-bottom: 46px;
+    margin-bottom: 44px;
     line-height: 19px;
-
-    &:hover {
-      background-color: #ffffff;
-      color: $red;
-    }
-
-    &:active {
-      background-color: #ffffff;
-      color: rgba(210, 40, 86, 0.3);
-    }
   }
 
   .download-block__info {

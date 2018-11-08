@@ -141,7 +141,7 @@
 @media (min-width: 660px) {
   .make-post {
     @include centered($tablet-width);
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   .make-post__message {
@@ -226,6 +226,10 @@
       width: 16px;
       height: 16px;
       margin-left: 5px;
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 
@@ -317,7 +321,7 @@
   }
 
   .make-post__tool-wrapper {
-    padding: 57px 50px 58px 79px;
+    padding: 57px 50px 53px 79px;
     margin-top: 65px;
   }
 
@@ -329,7 +333,7 @@
   .make-post__post-it,
   .make-post__cancel {
     width: 184px;
-    margin-bottom: 0;
+    margin-bottom: 4px;
   }
 
   .make-post__svg {
