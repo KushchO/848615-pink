@@ -9,12 +9,19 @@
   justify-content: space-between;
   width: 100%;
   min-height: 66px;
-  position: relative;
   overflow: hidden;
   z-index: 10;
 
   &--open-menu {
     background-position: 0 260px;
+
+    .page-header__nav-wrapper-desk {
+      background-color: transparent;
+    }
+
+    .page-header__first-line {
+      border-bottom: 1px solid #000000;
+    }
   }
 
   &--no-js {
@@ -41,16 +48,6 @@
 .page-header__nav-wrapper-desk {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
-}
-
-.page-header--open-menu {
-  .page-header__nav-wrapper-desk {
-    background-color: transparent;
-  }
-
-  .page-header__first-line {
-    border-bottom: 1px solid #000000;
-  }
 }
 
 .page-header__first-line {
@@ -265,7 +262,7 @@
 
   .page-header--open-menu {
     .page-header__nav-wrapper-desk {
-      background-color:  rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
 

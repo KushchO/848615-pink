@@ -71,23 +71,23 @@
   flex-direction: column;
 }
 
-.contest__item-checkbox:nth-child(2){
+.contest__item-checkbox:nth-child(2) {
   order: 3;
 }
 
-.contest__item-checkbox:nth-child(3){
+.contest__item-checkbox:nth-child(3) {
   order: 5;
 }
 
-.contest__item-checkbox:nth-child(4){
+.contest__item-checkbox:nth-child(4) {
   order: 2;
 }
 
-.contest__item-checkbox:nth-child(5){
+.contest__item-checkbox:nth-child(5) {
   order: 4;
 }
 
-.contest__item-checkbox:nth-child(6){
+.contest__item-checkbox:nth-child(6) {
   order: 6;
 }
 
@@ -154,8 +154,6 @@
     border-radius: 0;
   }
 }
-
-
 
 .contest__label-check:hover::before {
   border-color: $dark-blue;
@@ -323,10 +321,6 @@ input:checked ~ .contest__label-check--box::before {
     line-height: 30px;
   }
 
-  .contest__title {
-    top: -10px;
-  }
-
   .contest__info {
     @include reset-margin-padding;
     font-size: 18px;
@@ -405,6 +399,7 @@ input:checked ~ .contest__label-check--box::before {
       left: 91px;
     }
   }
+
   .contest__emotions {
     border: 2px solid #e5e5e5;
     order: 4;
@@ -439,7 +434,6 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest_button {
-    margin: 0;
     width: 300px;
     margin: auto 0;
   }
@@ -449,6 +443,7 @@ input:checked ~ .contest__label-check--box::before {
     width: auto;
     padding: 0 30px;
     background: #ffffff;
+    top: -10px;
 
     &--hidden {
       display: block;
@@ -484,6 +479,7 @@ input:checked ~ .contest__label-check--box::before {
 
   .contest__personal-info {
     margin-bottom: 11px;
+    padding-top: 7px;
   }
 
   .contest__app-type {
@@ -500,10 +496,6 @@ input:checked ~ .contest__label-check--box::before {
 
   .contest__list--apps {
     padding-top: 6px;
-  }
-
-  .contest__personal-info {
-    padding-top: 7px;
   }
 
   .contest__item-input {

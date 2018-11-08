@@ -159,6 +159,8 @@
 
   .features__item {
     margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
   }
 
   .features__item:not(:nth-child(3n+3)) {
@@ -167,6 +169,11 @@
 
   .features__item--last {
     order: 0;
+    padding-bottom: 0;
+
+    .features__img {
+      position: static;
+    }
   }
 
   .features__white-wrapper {
@@ -194,21 +201,11 @@
     }
   }
 
-  .features__item--last {
-    padding-bottom: 0;
-
-    .features__img {
-      position: static;
-    }
-  }
-
-  .features__item {
-    width: 300px;
-    text-align: center;
-  }
-
   .features__text {
     line-height: $line-h-big1;
+    width: 245px;
+    margin: 0 auto;
+    font-size: 18px;
   }
 
   .features__img {
@@ -220,12 +217,6 @@
     @include heading ($middle-big, $font-bold, $line-h-big1);
     width: 230px;
     margin: 51px auto 23px;
-  }
-
-  .features__text {
-    width: 245px;
-    margin: 0 auto;
-    font-size: 18px;
   }
 
   .features__br1 {

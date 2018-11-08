@@ -74,7 +74,7 @@
 }
 
 .make-post__item {
-  .make-post__range:active:after {
+  .make-post__range:active::after {
     background-color: $red;
   }
 }
