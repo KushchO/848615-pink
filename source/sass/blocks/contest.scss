@@ -3,10 +3,6 @@
   padding-bottom: 34px;
 }
 
-.contest__form {
-  position: relative;
-}
-
 .contest__info {
   @include reset-margin-padding;
   @include block-padding($mobile-block-padding);
@@ -30,11 +26,6 @@
   border: none;
   margin-bottom: 28px;
   position: relative;
-}
-
-.contest__contacts,
-.contest__personal-info {
-  margin-bottom: 12px;
 }
 
 .contest__list {
@@ -106,8 +97,10 @@
 }
 
 .contest__title {
-  display: table-cell;
-  position: relative;
+  @include reset-margin-padding;
+  position: absolute;
+  top: 38px;
+  left: 35px;
   width: 250px;
   text-align: center;
   font-size: 14px;
@@ -115,8 +108,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #d22856;
-  top: 56px;
-  margin-bottom: -21px;
+  margin-bottom: 35px;
 
   &--hidden {
     display: none;
@@ -221,8 +213,8 @@ input:checked ~ .contest__label-check--box::before {
   margin-bottom: 43px;
 
   .contest__title {
-    top: 13px;
-    margin-bottom: -17px;
+    top: 11px;
+    left: 34px;
   }
 }
 
@@ -266,21 +258,6 @@ input:checked ~ .contest__label-check--box::before {
     @include flex-container;
     @include block-padding($mobile-block-padding);
     justify-content: space-between;
-  }
-
-  .contest__title {
-    top: 0;
-    left: 0;
-    width: auto;
-    display: block;
-    padding: 0 30px;
-    background: #ffffff;
-    margin-bottom: 0;
-    position: relative;
-
-    &--hidden {
-      display: block;
-    }
   }
 
   .contest__label-input {
@@ -359,7 +336,7 @@ input:checked ~ .contest__label-check--box::before {
     padding-top: 70px;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 7px;
+    margin-bottom: 14px;
   }
 
   .contest__item-input--inline label {
@@ -374,8 +351,12 @@ input:checked ~ .contest__label-check--box::before {
     order: 1;
     background: transparent;
     border: 2px solid #e5e5e5;
-    padding: 35px 57px 20px;
-    margin-bottom: 56px;
+    padding: 44px 57px 20px;
+    margin-bottom: 63px;
+
+    .contest__title {
+      left: 118px;
+    }
   }
 
   .contest__list {
@@ -395,11 +376,15 @@ input:checked ~ .contest__label-check--box::before {
   .contest__contacts {
     order: 2;
     border: 2px solid #e5e5e5;
-    padding: 36px 58px 0;
-    margin-bottom: 58px;
+    padding: 45px 58px 0;
+    margin-bottom: 64px;
 
     .contest__input {
       padding-left: 19px;
+    }
+
+    .contest__title {
+      left: 179px;
     }
   }
 
@@ -407,17 +392,23 @@ input:checked ~ .contest__label-check--box::before {
     order: 3;
     background: transparent;
     border: 2px solid #e5e5e5;
-    padding: 42px 57px 6px;
-    margin-bottom: 57px;
+    padding: 51px 57px 6px;
+    margin-bottom: 65px;
+
+    .contest__title {
+      left: 91px;
+    }
   }
 
   .contest__emotions {
     border: 2px solid #e5e5e5;
     order: 4;
-    padding: 53px 57px 48px;
+    padding: 45px 57px 48px;
 
     .contest__title {
-      top: 0;
+      padding: 0 35px;
+      top: -10px;
+      left: 180px;
     }
   }
 
@@ -445,6 +436,18 @@ input:checked ~ .contest__label-check--box::before {
   .contest_button {
     width: 300px;
     margin: auto 0;
+  }
+
+  .contest__title {
+    position: absolute;
+    width: auto;
+    padding: 0 30px;
+    background: #ffffff;
+    top: -10px;
+
+    &--hidden {
+      display: block;
+    }
   }
 }
 
@@ -475,20 +478,20 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest__personal-info {
-    margin-bottom: 0;
+    margin-bottom: 11px;
     padding-top: 7px;
   }
 
   .contest__app-type {
-    padding-top: 41px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 55px;
-    margin-top: -7px;
-  }
+    padding-top: 49px;
+    padding-left: 73px;
+    margin-bottom: 63px;
 
-  .contest__item-radio {
-    margin-left: 53px;
+    .contest__title {
+      position: absolute;
+      top: -10px;
+      left: 26px;
+    }
   }
 
   .contest__list--apps {
@@ -500,7 +503,11 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest__contacts {
-    padding-top: 34px;
+    padding-top: 42px;
+
+    .contest__title {
+      left: 339px;
+    }
   }
 
   .contest__item-input--contacts {
@@ -529,6 +536,10 @@ input:checked ~ .contest__label-check--box::before {
     padding-bottom: 13px;
     padding-left: 52px;
     padding-right: 0;
+
+    .contest__title {
+      left: 251px;
+    }
   }
 
   .contest__archievements-list {
@@ -558,10 +569,10 @@ input:checked ~ .contest__label-check--box::before {
   .contest__emotions {
     margin-bottom: 37px;
     padding-bottom: 41px;
-    padding-top: 32px;
+    padding-top: 42px;
 
     .contest__title {
-      margin-bottom: 0;
+      left: 341px;
     }
   }
 
