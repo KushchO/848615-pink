@@ -79,9 +79,9 @@
     flex-direction: column;
     flex-grow: 1;
     line-height: 18px;
-    padding-top: 25px;
+    padding-top: 22px;
     padding-left: 27px;
-    min-height: 129px;
+    min-height: 127px;
     box-sizing: border-box;
   }
 
@@ -113,7 +113,7 @@
     @include flex-container;
     flex-direction: column;
     width: 300px;
-    padding-bottom: 26px;
+    padding-bottom: 24px;
   }
 
   .gallery__img {
@@ -146,7 +146,6 @@
   .gallery__item {
     width: 300px;
     margin-bottom: 55px;
-    padding-bottom: 24px;
   }
 
   .gallery__item:not(:nth-child(3n + 2)) {
@@ -163,6 +162,6 @@
   }
 
   .gallery__meta {
-    padding-top: 26px;
+    padding-top: 22px;
   }
 }

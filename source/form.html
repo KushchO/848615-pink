@@ -14,8 +14,8 @@
   <link rel="preload" href="fonts/opensanssemibold.woff" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <script>
-      // Picture element HTML5 shiv
-      document.createElement( "picture" );
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
@@ -28,12 +28,14 @@
     <div class="page-header__nav-wrapper-desk">
       <div class="page-header__nav-wrapper">
         <div class="page-header__first-line">
-          <a class="page-header__logo" href="index.html" aria-label="Главная страница приложения Pink">
-            <svg class="page-header__logo" width="75" height="22">
+          <div class="page-header__first-line-wrapper">
+            <a class="page-header__logo" href="index.html" aria-label="Главная страница приложения Pink">
+              <svg class="page-header__logo" width="75" height="22" aria-label="Приложение Pink">
                 <use xlink:href="#logo-pink"></use>
-            </svg>
-          </a>
-          <button class="page-header__burger-menu  page-header__burger-menu--closed"></button>
+              </svg>
+            </a>
+            <button class="page-header__burger-menu  page-header__burger-menu--closed" type="button"></button>
+          </div>
         </div>
         <ul class="page-header__navigation site-navigation site-navigation--closed">
           <li class="site-navigation__item site-navigation__item--active">
@@ -60,7 +62,7 @@
       </div>
     </div>
     <section class="page-title">
-        <h2 class="page-title__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h2 class="page-title__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
   </header>
   <main class="page-main">
@@ -78,7 +80,7 @@
             </li>
             <li class="contest__item-input contest__item-input--inline">
               <label for="contest-name" class="contest__label-input">Имя:</label>
-              <input id="contest-name" class="contest__input contest__input--error" type="text" placeholder="Введите ваше имя *" required>
+              <input id="contest-name" class="contest__input" type="text" placeholder="Введите ваше имя *" required>
             </li>
             <li class="contest__item-input contest__item-input--inline">
               <label for="contest-patronymic" class="contest__label-input">Отчество:</label>
@@ -91,92 +93,38 @@
           <ul class="contest__archievements-list">
             <li class="contest__item-checkbox checked">
               <input id="contest-shark" class="contest__checkbox" type="checkbox" checked>
-              <label class="contest__label-check" for="contest-shark">
-                <span class="contest__checkbox-box"></span>
-                Сделал селфи с акулой</label>
-            </li>
-            <li class="contest__item-checkbox checked">
-              <input id="contest-beach" class="contest__checkbox" type="checkbox" checked>
-              <label class="contest__label-check" for="contest-beach">
-                <span class="contest__checkbox-box"></span>
-                Обгорел на пляже
+              <label class="contest__label-check contest__label-check--box" for="contest-shark" tabindex="0">
+                <span class="contest__label-text">Сделал селфи с акулой</span>
               </label>
             </li>
             <li class="contest__item-checkbox">
               <input id="contest-norris" class="contest__checkbox" type="checkbox">
-              <label class="contest__label-check" for="contest-norris">
-                <span class="contest__checkbox-box"></span>
-                Видел Чака Норриса
-              </label>
-            </li>
-            <li class="contest__item-checkbox">
-              <input id="contest-souvenir" class="contest__checkbox" type="checkbox">
-              <label class="contest__label-check" for="contest-souvenir">
-                <span class="contest__checkbox-box"></span>
-                Накупил сувениров
+              <label class="contest__label-check contest__label-check--box" for="contest-norris" tabindex="0">
+                <span class="contest__label-text">Видел Чака Норриса</span>
               </label>
             </li>
             <li class="contest__item-checkbox checked">
               <input id="contest-tower" class="contest__checkbox" type="checkbox" checked>
-              <label class="contest__label-check" for="contest-tower">
-                <span class="contest__checkbox-box"></span>
-                Удержал башню
+              <label class="contest__label-check contest__label-check--box" for="contest-tower" tabindex="0">
+                <span class="contest__label-text">Удержал башню</span>
+              </label>
+            </li>
+            <li class="contest__item-checkbox checked">
+              <input id="contest-beach" class="contest__checkbox" type="checkbox" checked>
+              <label class="contest__label-check contest__label-check--box" for="contest-beach" tabindex="0">
+                <span class="contest__label-text">Обгорел на пляже</span>
+              </label>
+            </li>
+            <li class="contest__item-checkbox">
+              <input id="contest-souvenir" class="contest__checkbox" type="checkbox">
+              <label class="contest__label-check contest__label-check--box" for="contest-souvenir" tabindex="0">
+                <span class="contest__label-text">Накупил сувениров</span>
               </label>
             </li>
             <li class="contest__item-checkbox">
               <input id="contest-hotel" class="contest__checkbox" type="checkbox">
-              <label class="contest__label-check" for="contest-hotel">
-                <span class="contest__checkbox-box"></span>
-                Разгромил отель
-              </label>
-            </li>
-          </ul>
-          <div class="contest-desktop-acarchievements-wrapper">
-          <ul class="contest__archievements-list-dt  contest__archievements-list-dt--col1">
-            <li class="contest__item-checkbox checked">
-              <input id="contest-shark1" class="contest__checkbox" type="checkbox" checked>
-              <label class="contest__label-check" for="contest-shark1">
-                <span class="contest__checkbox-box"></span>
-                Сделал селфи с акулой
-              </label>
-            </li>
-            <li class="contest__item-checkbox checked">
-              <input id="contest-beach1" class="contest__checkbox" type="checkbox" checked>
-              <label class="contest__label-check" for="contest-beach1">
-                <span class="contest__checkbox-box"></span>
-                Обгорел на пляже
-              </label>
-            </li>
-          </ul>
-          <ul class="contest__archievements-list-dt contest__archievements-list-dt--col2">
-            <li class="contest__item-checkbox">
-              <input id="contest-norris1" class="contest__checkbox" type="checkbox">
-              <label class="contest__label-check" for="contest-norris1">
-                <span class="contest__checkbox-box"></span>
-                Видел Чака Норриса
-              </label>
-            </li>
-            <li class="contest__item-checkbox">
-              <input id="contest-souvenir1" class="contest__checkbox" type="checkbox">
-              <label class="contest__label-check" for="contest-souvenir1">
-                <span class="contest__checkbox-box"></span>
-                Накупил сувениров
-              </label>
-            </li>
-          </ul>
-          <ul class="contest__archievements-list-dt contest__archievements-list-dt--col3">
-            <li class="contest__item-checkbox checked">
-              <input id="contest-tower1" class="contest__checkbox" type="checkbox" checked>
-              <label class="contest__label-check" for="contest-tower1">
-                <span class="contest__checkbox-box"></span>
-                Удержал башню
-              </label>
-            </li>
-            <li class="contest__item-checkbox">
-              <input id="contest-hotel1" class="contest__checkbox" type="checkbox">
-              <label class="contest__label-check" for="contest-hotel1">
-                <span class="contest__checkbox-box"></span>
-                Разгромил отель
+              <label class="contest__label-check contest__label-check--box" for="contest-hotel" tabindex="0">
+                <span class="contest__label-text">Разгромил отель</span>
               </label>
             </li>
           </ul>
@@ -184,36 +132,36 @@
         <fieldset class="contest__contacts">
             <legend class="contest__title contest__title--contacts contest__title--hidden">Контактная информация</legend>
             <ul class="contest__list">
-                <li class="contest__item-input contest__item-input--contacts">
-                  <label for="contest-phone" class="contest__label-input contest__label-input--order1">Номер телефона</label>
-                  <input id="contest-phone" class="contest__input contest__input--phone" type="text" placeholder="Номер, пожалуйста">
-                </li>
-                <li class="contest__item-input contest__item-input--contacts">
-                  <label for="contest-email" class="contest__label-input contest__label-input--order2">Адрес почты</label>
-                  <input id="contest-email" class="contest__input contest__input--mail" type="text" placeholder="Введите почту *" required>
-                </li>
-              </ul>
+              <li class="contest__item-input contest__item-input--contacts">
+                <label for="contest-phone" class="contest__label-input contest__label-input--order1">Номер телефона</label>
+                <input id="contest-phone" class="contest__input contest__input--phone" type="text" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="contest__item-input contest__item-input--contacts">
+                <label for="contest-email" class="contest__label-input contest__label-input--order2">Адрес почты</label>
+                <input id="contest-email" class="contest__input contest__input--mail" type="text" placeholder="Введите почту *" required>
+              </li>
+            </ul>
         </fieldset>
         <fieldset class="contest__app-type">
           <legend class="contest__title">С каким приложением путешествовали?</legend>
           <ul class="contest__list contest__list--apps">
             <li class="contest__item-radio">
               <input id="contest-ios" name="apps" class="contest__radio" type="radio" checked>
-              <label class="contest__label-check" for="contest-ios">
-                <span class="contest__radio-box"></span>
-                Pink для iOS</label>
+              <label class="contest__label-check" for="contest-ios" tabindex="0">
+                <span class="contest__label-text">Pink для iOS</span>
+              </label>
             </li>
             <li class="contest__item-radio">
               <input id="contest-android" name="apps" class="contest__radio" type="radio">
-              <label class="contest__label-check" for="contest-android">
-                <span class="contest__radio-box"></span>
-                Pink на Android</label>
+              <label class="contest__label-check" for="contest-android" tabindex="0">
+                <span class="contest__label-text">Pink на Android</span>
+              </label>
             </li>
             <li class="contest__item-radio">
               <input id="contest-windows" name="apps" class="contest__radio" type="radio">
-              <label class="contest__label-check" for="contest-windows">
-                <span class="contest__radio-box"></span>
-                Windows Phone</label>
+              <label class="contest__label-check" for="contest-windows" tabindex="0">
+                <span class="contest__label-text">Windows Phone</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -222,34 +170,36 @@
           <textarea class="contest__story" name="contest-feedback" id="contest-story" cols="30" rows="5">Можно прям в красках,&nbsp;не стесняясь в выражениях</textarea>
         </fieldset>
         <div class="contest__end-of-form">
-          <a class="contest_button form-button" href="#">Отправить форму</a>
+          <button class="contest_button form-button" type="submit">Отправить форму</button>
           <small class="contest__about-required"><span class="contest__highlighted highlighted">*</span> — обязательные<span class="contest__about-add">&nbsp;для заполнения</span>&nbsp;поля</small>
         </div>
       </form>
     </section>
   </main>
   <footer class="page-footer">
-    <svg class="page-footer__logo" width="150" height="100">
-      <use xlink:href="#logo-pink-foot"></use>
-    </svg>
+    <a href="index.html" class="page-footer__logo-link" aria-label="На главную">
+      <svg class="page-footer__logo" width="150" height="100">
+        <use xlink:href="#logo-pink-foot"></use>
+      </svg>
+    </a>
     <ul class="page-footer__social social-list">
       <li class="social-list__item">
-        <a class="social-list__twitter" href="#" aria-label="twitter">
-          <svg class="page-footer__social-svg" width="18" height="14">
+        <a class="social-list__link social-list__link--twitter" href="#" aria-label="twitter">
+          <svg class="social-list__social-svg" width="18" height="14" aria-label="Мы в Твиттере">
             <use xlink:href="#icon-twitter"></use>
           </svg>
         </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__facebook" href="#" aria-label="facebook">
-          <svg class="page-footer__social-svg" width="9" height="18">
+        <a class="social-list__link social-list__link--facebook" href="#" aria-label="facebook">
+          <svg class="social-list__social-svg" width="9" height="18" aria-label="Мы в Фейсбуке">
             <use xlink:href="#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__youtube" href="#" aria-label="youtube">
-          <svg class="page-footer__social-svg" width="15" height="13">
+        <a class="social-list__link social-list__link--youtube" href="#" aria-label="youtube">
+          <svg class="social-list__social-svg" width="15" height="13" aria-label="Мы на Ютубе">
             <use xlink:href="#icon-youtube"></use>
           </svg>
         </a>
@@ -258,12 +208,12 @@
     <div class="page-footer__maintained ">
       <a class="page-footer__maintained-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
         <p class="page-footer__maintained-text">Разработано</p>
-        <svg class="page-footer__maintained-logo" width="27" height="34">
+        <svg class="page-footer__maintained-logo" width="27" height="34" aria-label="HTML Academy">
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
-  </footer>
+  </footer></footer>
   <div class="popup popup--with-bottom popup--sent">
     <h2 class="popup__title">Ваша заявка отправлена</h2>
     <p class="popup__info">
@@ -271,7 +221,7 @@
       оповестим вас.
     </p>
     <div class="popup__bottom">
-      <button class="popup__button form-button">Закрыть окно</button>
+      <button class="popup__button form-button" type="button">Закрыть окно</button>
     </div>
   </div>
   <div class="popup popup--failure">
@@ -280,7 +230,7 @@
       Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
     </p>
     <div class="popup_bottom-dt">
-      <button class="popup__button form-button">ок</button>
+      <button class="popup__button form-button" type="button">ок</button>
     </div>
   </div>
   <script src="js/pink.js"></script>

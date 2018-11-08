@@ -1,11 +1,16 @@
 .page-footer {
   display: block;
-  padding-top: 8px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .page-footer--index {
   display: none;
+}
+
+.page-footer__social-svg {
+
+  fill: #d22856;
 }
 
 .page-footer__logo {
@@ -31,6 +36,12 @@
   color: #283645;
 }
 
+.page-footer__maintained-text {
+  line-height: 18px;
+  margin-top: 17px;
+  max-width: 200px;
+}
+
 .page-footer__maintained-logo {
   margin-left: 15px;
   margin-top: 10px;
@@ -50,11 +61,8 @@
 }
 
 .page-footer__maintained {
-  margin-bottom: 40px;
-}
-
-.social-list__item:not(:last-child) {
-  margin-right: 12px;
+  max-width: 250px;
+  margin: 0 auto 40px;
 }
 
 .page-footer__social {
@@ -78,7 +86,7 @@
 
   .page-footer__maintained {
     display: flex;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .page-footer__maintained-link {
@@ -113,6 +121,7 @@
     @include block-padding($desktop-block-padding);
     @include centered($desktop-width);
     padding-top: 18px;
+    padding-bottom: 45px;
   }
 
   .page-footer--index {
@@ -121,11 +130,11 @@
 
   .page-footer__maintained-text {
     font-size: $title-font;
-    margin-top: 15px;
+    margin-top: 17px;
   }
 
   .page-footer__social {
-    margin-left: 6px;
+    margin-left: 10px;
     margin-top: 2px;
   }
 

@@ -8,6 +8,7 @@
 .site-navigation__item {
   width: 100%;
   display: block;
+  line-height: 32px;
 }
 
 .site-navigation__link {
@@ -16,7 +17,7 @@
   background-color: #283645;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #485461;
-  padding: 19px 0;
+  padding: 15px 0;
 
   &:hover {
     color: $red;
