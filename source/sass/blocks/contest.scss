@@ -60,8 +60,7 @@
   }
 
   &--error,
-  &:invalid
-   {
+  &:invalid {
     border-color: $red;
   }
 }
