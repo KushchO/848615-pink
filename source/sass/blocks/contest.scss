@@ -82,8 +82,8 @@
  чтобы переопределить стандартные стили плейсхолдера*/
 
 .contest__input:-ms-input-placeholder {
-  font: $regular-font "Open Sans", "Arial", sans-serif !important;
-  font-size: 18px !important;
+  font: $regular-font "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
 }
 
 .contest__archievements-list {
