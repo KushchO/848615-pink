@@ -78,14 +78,6 @@
   font-size: 18px;
 }
 
-/*Использовал !important т.к. для IE11 он необходим,
- чтобы переопределить стандартные стили плейсхолдера*/
-
-.contest__input:-ms-input-placeholder {
-  font: $regular-font "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
-}
-
 .contest__archievements-list {
   @include block-padding($mobile-block-padding);
   @include reset-list;
