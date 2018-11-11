@@ -323,6 +323,12 @@ input:checked ~ .contest__label-check--box::before {
     }
   }
 
+  .contest__label-check {
+    &::before {
+      margin-right: 22px;
+    }
+  }
+
   .contest__label-input--order1,
   .contest__label-input--order2 {
     order: 1;
