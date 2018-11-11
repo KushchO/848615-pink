@@ -27,7 +27,7 @@
 }
 
 .button--cancel {
-  background: transparent;
+  background-color: transparent;
   border-color: $dark-blue;
   color: $dark-blue;
   opacity: 0.1;
@@ -39,6 +39,6 @@
   &:active {
     color: #ffffff;
     opacity: 0.3;
-    background: $dark-blue;
+    background-color: $dark-blue;
   }
 }

@@ -16,6 +16,11 @@
   }
 }
 
+.contest__form {
+  @include flex-container;
+  flex-wrap: wrap;
+}
+
 .contest__personal-info,
 .contest__archievements,
 .contest__app-type,
@@ -28,6 +33,14 @@
   position: relative;
 }
 
+.contest__contacts {
+  order: 3;
+}
+
+.contest__personal-info {
+  margin-bottom: 31px;
+}
+
 .contest__list {
   @include reset-list;
 }
@@ -35,6 +48,7 @@
 .contest__input {
   box-sizing: border-box;
   width: 100%;
+  min-height: 64px;
   border: 2px solid #e5e5e5;
   padding: 15px 22px;
   margin-bottom: 12px;
@@ -92,6 +106,7 @@
 }
 
 .contest__archievements {
+  order: 2;
   position: relative;
   padding-top: 114px;
 }
@@ -115,12 +130,8 @@
   }
 }
 
-.contest__radio,
-.contest__checkbox {
-  display: none;
-}
-
 .contest__app-type {
+  order: 4;
   position: relative;
   padding-top: 110px;
   padding-bottom: 4px;
@@ -132,6 +143,7 @@
 
 .contest__label-check {
   @include flex-container;
+  justify-content: flex-start;
   margin: auto 0;
   font-size: 18px;
   line-height: 40px;
@@ -141,6 +153,9 @@
   &::before {
     @include radio-check;
     border-radius: 50%;
+    margin: auto 0;
+    margin-right: 30px;
+    flex-shrink: 0;
     content: "";
   }
 }
@@ -178,6 +193,14 @@
   margin-bottom: 35px;
 }
 
+input:focus ~ .contest__label-check::before {
+  border-color: $dark-blue;
+}
+
+input:active ~ .contest__label-check::before {
+  border-color: $red;
+}
+
 input:checked ~ .contest__label-check::before {
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
@@ -189,7 +212,7 @@ input:checked ~ .contest__label-check--box::before {
   background-image: url("../img/icon-yes-red.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 23px 30px;
+  background-size: 23px 18px;
 }
 
 .contest__archievements,
@@ -209,6 +232,7 @@ input:checked ~ .contest__label-check--box::before {
 }
 
 .contest__emotions {
+  order: 5;
   padding-top: 45px;
   margin-bottom: 43px;
 
@@ -220,6 +244,7 @@ input:checked ~ .contest__label-check--box::before {
 
 .contest__end-of-form {
   @include block-padding($mobile-block-padding);
+  order: 6;
   width: 100%;
 }
 
@@ -255,7 +280,6 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest__form {
-    @include flex-container;
     @include block-padding($mobile-block-padding);
     justify-content: space-between;
   }
@@ -264,12 +288,9 @@ input:checked ~ .contest__label-check--box::before {
     margin-right: 8px;
     margin-left: 0;
     padding-left: 0;
-  }
-
-  .contest__label-check {
-    &::before {
-      margin-right: 22px;
-    }
+    box-sizing: border-box;
+    flex-shrink: 0;
+    align-self: center;
   }
 
   .contest__item-input {
@@ -288,6 +309,12 @@ input:checked ~ .contest__label-check--box::before {
       &:last-child {
         margin-bottom: 22px;
       }
+    }
+  }
+
+  .contest__label-check {
+    &::before {
+      margin-right: 22px;
     }
   }
 
@@ -312,7 +339,7 @@ input:checked ~ .contest__label-check--box::before {
       url("../img/icon-mail.svg"),
       linear-gradient(to left, #e5e5e5, #e5e5e5);
     background-position: 457px 20px, 437px 0;
-    background-size: 18px 19px, 64px 64px;
+    background-size: 18px 15px, 64px 64px;
     background-repeat: no-repeat;
   }
 
@@ -347,8 +374,8 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest__app-type {
+    order: 0;
     display: block;
-    order: 1;
     background: transparent;
     border: 2px solid #e5e5e5;
     padding: 44px 57px 20px;
@@ -374,7 +401,7 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest__contacts {
-    order: 2;
+    order: 0;
     border: 2px solid #e5e5e5;
     padding: 45px 58px 0;
     margin-bottom: 64px;
@@ -389,7 +416,7 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest__archievements {
-    order: 3;
+    order: 0;
     background: transparent;
     border: 2px solid #e5e5e5;
     padding: 51px 57px 6px;
@@ -401,8 +428,8 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest__emotions {
+    order: 0;
     border: 2px solid #e5e5e5;
-    order: 4;
     padding: 45px 57px 48px;
 
     .contest__title {
@@ -418,7 +445,7 @@ input:checked ~ .contest__label-check--box::before {
   }
 
   .contest__end-of-form {
-    order: 5;
+    order: 0;
     display: flex;
     justify-content: space-between;
     padding: 0;

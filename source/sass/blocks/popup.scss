@@ -67,10 +67,6 @@
   .popup__button {
     width: 300px;
   }
-
-  .popup__mobile-br {
-    display: none;
-  }
 }
 
 @media (min-width: 960px) {
@@ -89,10 +85,6 @@
       padding: 0 193px;
       padding-block-end: 30px;
     }
-  }
-
-  .popup__mobile-br {
-    display: none;
   }
 
   .popup_bottom-dt {
