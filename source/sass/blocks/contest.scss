@@ -53,14 +53,12 @@
   padding: 15px 22px;
   margin-bottom: 12px;
   line-height: 31px;
-  font: 14px "Open Sans","Arial",sans-serif;
 
   &:hover {
     border-color: $dark-blue;
   }
 
-  &--error,
-  &:invalid {
+  &--error {
     border-color: $red;
   }
 }
