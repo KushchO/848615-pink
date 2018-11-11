@@ -56,10 +56,6 @@
   margin-bottom: 35px;
 }
 
-.features__br1 {
-  display: none;
-}
-
 .features__item--last {
   position: relative;
   overflow: hidden;
@@ -78,10 +74,6 @@
 @media (min-width: 660px) {
   .features {
     padding-top: 50px;
-  }
-
-  .features__br1 {
-    display: inline;
   }
 
   .features__question {
@@ -217,9 +209,5 @@
     @include heading ($middle-big, $font-bold, $line-h-big1);
     width: 230px;
     margin: 51px auto 23px;
-  }
-
-  .features__br1 {
-    display: none;
   }
 }

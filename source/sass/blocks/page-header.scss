@@ -13,7 +13,7 @@
   z-index: 10;
 
   &--open-menu {
-    background-position: 0 260px;
+    background-position: 50% 260px;
 
     .page-header__nav-wrapper-desk {
       background-color: transparent;
@@ -60,7 +60,7 @@
   @include flex-container;
   justify-content: space-between;
   padding-top: 22px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 }
 
 .page-header__logo {
@@ -102,31 +102,31 @@
   fill: #ffffff;
 
   &--closed {
-    background: url("../img/icon-menu-burger.svg");
+    background-image: url("../img/icon-menu-burger.svg");
     width: 50px;
     height: 24px;
 
     &:hover {
-      background: url("../img/icon-menu-burger-red.svg");
+      background-image: url("../img/icon-menu-burger-red.svg");
     }
 
     &:active {
-      background: url("../img/icon-menu-burger-red.svg");
+      background-image: url("../img/icon-menu-burger-red.svg");
       opacity: 0.3;
     }
   }
 
   &--opened {
-    background: url("../img/icon-menu-cross.svg");
+    background-image: url("../img/icon-menu-cross.svg");
     width: 24px;
-    height: 23px;
+    height: 24px;
 
     &:hover {
-      background: url("../img/icon-menu-cross-red.svg");
+      background-image: url("../img/icon-menu-cross-red.svg");
     }
 
     &:active {
-      background: url("../img/icon-menu-cross-red.svg");
+      background-image: url("../img/icon-menu-cross-red.svg");
       opacity: 0.3;
     }
   }
