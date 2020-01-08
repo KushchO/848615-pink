@@ -1,9 +1,9 @@
 .best-panorama {
   position: relative;
+  overflow: hidden;
 }
 
 .best-panorama__img {
-  margin-left: -20px;
   position: relative;
 
   &::before {
@@ -20,6 +20,10 @@
     line-height: 18px;
     text-transform: uppercase;
     text-decoration: none;
+  }
+
+  img {
+    vertical-align: bottom;
   }
 }
 
@@ -71,6 +75,7 @@
       width: 700px;
       height: fit-content;
       margin-left: -20px;
+      transform: unset;
     }
 
     &::before {
@@ -87,13 +92,13 @@
   }
 
   .best-panorama__img {
-    margin-left: -130px;
     width: 1200px;
     height: 506px;
 
     img {
       width: 1200px;
       margin-left: 0;
+      transform: translateX(-130px);
     }
 
     &::before {
